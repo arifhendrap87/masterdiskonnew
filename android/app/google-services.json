@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "689407373938",
+    "firebase_url": "https://masterdiskon-a9016-default-rtdb.firebaseio.com",
+    "project_id": "masterdiskon-a9016",
+    "storage_bucket": "masterdiskon-a9016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689407373938:android:deb681401fd485825188eb",
+        "android_client_info": {
+          "package_name": "com.masterdiskon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689407373938-bh0apvevkcf2cegnvel6ukkh5gihpkna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.masterdiskon",
+            "certificate_hash": "bee23ec6e85b9bc6a1b2acd0f325176b14817721"
+          }
+        },
+        {
+          "client_id": "689407373938-etgfbgiv05edfcebavk8l6s85a0f6dou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.masterdiskon",
+            "certificate_hash": "e7b9171394e0691e173c82e8df8ecaa7d801f882"
+          }
+        },
+        {
+          "client_id": "689407373938-qqk851fouptpdiig50g6br7q3hmebqi9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.masterdiskon",
+            "certificate_hash": "65d2f3c8642d58c9385f3f0a7b901b51043ce91f"
+          }
+        },
+        {
+          "client_id": "689407373938-g8ordqn5omulbel22sdelaeb2ejbojq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcKlGf4LgEE-pZtlMQVDZ0MMIO8P3k-_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689407373938-g8ordqn5omulbel22sdelaeb2ejbojq5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "689407373938-h0pndabgb3g0bhquvqjgiakd2d8h7nm3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.masdis.cust"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

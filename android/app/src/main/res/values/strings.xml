@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Master Diskon</string>
+    <string name="facebook_app_id">305822580592289</string> 
+    <string name="fb_login_protocol_scheme">fb305822580592289</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">bfSMzOiZbFqHJd-0hLEs499IPmit2u_G5-yC7</string>
+</resources>

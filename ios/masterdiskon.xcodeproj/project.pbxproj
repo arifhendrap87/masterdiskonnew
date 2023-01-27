@@ -1,0 +1,1099 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		82195BC5255204B500ECD61B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82195BC4255204B500ECD61B /* File.swift */; };
+		C2C8168E28BDD76900398BB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		C2C8168F28BDE03300398BB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		C2C816C628BDE76700398BB0 /* GOTHIC.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169028BDE76600398BB0 /* GOTHIC.TTF */; };
+		C2C816C728BDE76700398BB0 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169128BDE76600398BB0 /* Raleway-BlackItalic.ttf */; };
+		C2C816C828BDE76700398BB0 /* blogger-sans.medium-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169228BDE76600398BB0 /* blogger-sans.medium-italic.otf */; };
+		C2C816C928BDE76700398BB0 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169328BDE76600398BB0 /* Raleway-Bold.ttf */; };
+		C2C816CA28BDE76700398BB0 /* Blogger Sans-Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169428BDE76600398BB0 /* Blogger Sans-Bold Italic.ttf */; };
+		C2C816CB28BDE76700398BB0 /* BloggerSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169528BDE76600398BB0 /* BloggerSans-Bold.ttf */; };
+		C2C816CC28BDE76700398BB0 /* blogger-sans.bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169628BDE76600398BB0 /* blogger-sans.bold.otf */; };
+		C2C816CD28BDE76700398BB0 /* BloggerSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169728BDE76600398BB0 /* BloggerSans-LightItalic.ttf */; };
+		C2C816CE28BDE76700398BB0 /* GOTHICB0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169828BDE76600398BB0 /* GOTHICB0.TTF */; };
+		C2C816CF28BDE76700398BB0 /* BloggerSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169928BDE76600398BB0 /* BloggerSans-Italic.ttf */; };
+		C2C816D028BDE76800398BB0 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169A28BDE76600398BB0 /* Lato-Black.ttf */; };
+		C2C816D128BDE76800398BB0 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169B28BDE76600398BB0 /* Raleway-BoldItalic.ttf */; };
+		C2C816D228BDE76800398BB0 /* CenturyGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169C28BDE76600398BB0 /* CenturyGothic.ttf */; };
+		C2C816D328BDE76800398BB0 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169D28BDE76600398BB0 /* Lato-Regular.ttf */; };
+		C2C816D428BDE76800398BB0 /* Blogger-Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169E28BDE76600398BB0 /* Blogger-Sans.ttf */; };
+		C2C816D528BDE76800398BB0 /* Century Gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C8169F28BDE76600398BB0 /* Century Gothic.ttf */; };
+		C2C816D628BDE76800398BB0 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A028BDE76600398BB0 /* Lato-BoldItalic.ttf */; };
+		C2C816D728BDE76800398BB0 /* blogger-sans.italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A128BDE76600398BB0 /* blogger-sans.italic.otf */; };
+		C2C816D828BDE76800398BB0 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A328BDE76600398BB0 /* Raleway-Medium.ttf */; };
+		C2C816D928BDE76800398BB0 /* blogger-sans.light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A428BDE76600398BB0 /* blogger-sans.light.otf */; };
+		C2C816DA28BDE76800398BB0 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A528BDE76600398BB0 /* Raleway-Light.ttf */; };
+		C2C816DB28BDE76800398BB0 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A628BDE76600398BB0 /* Lato-Bold.ttf */; };
+		C2C816DC28BDE76800398BB0 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A728BDE76600398BB0 /* Raleway-SemiBoldItalic.ttf */; };
+		C2C816DD28BDE76800398BB0 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A828BDE76600398BB0 /* Raleway-Thin.ttf */; };
+		C2C816DE28BDE76800398BB0 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816A928BDE76700398BB0 /* Raleway-MediumItalic.ttf */; };
+		C2C816DF28BDE76800398BB0 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816AA28BDE76700398BB0 /* Raleway-Italic.ttf */; };
+		C2C816E028BDE76800398BB0 /* Blogger Sans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816AB28BDE76700398BB0 /* Blogger Sans-Bold.ttf */; };
+		C2C816E128BDE76800398BB0 /* Blogger Sans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816AC28BDE76700398BB0 /* Blogger Sans.ttf */; };
+		C2C816E228BDE76800398BB0 /* BloggerSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816AD28BDE76700398BB0 /* BloggerSans-Medium.ttf */; };
+		C2C816E328BDE76800398BB0 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816AE28BDE76700398BB0 /* Lato-Italic.ttf */; };
+		C2C816E428BDE76800398BB0 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816AF28BDE76700398BB0 /* Raleway-ExtraLightItalic.ttf */; };
+		C2C816E528BDE76800398BB0 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B028BDE76700398BB0 /* Raleway-ExtraBoldItalic.ttf */; };
+		C2C816E628BDE76800398BB0 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B128BDE76700398BB0 /* Raleway-SemiBold.ttf */; };
+		C2C816E728BDE76800398BB0 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B228BDE76700398BB0 /* Raleway-Black.ttf */; };
+		C2C816E828BDE76800398BB0 /* gothicb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B328BDE76700398BB0 /* gothicb.ttf */; };
+		C2C816E928BDE76800398BB0 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B428BDE76700398BB0 /* Lato-Thin.ttf */; };
+		C2C816EA28BDE76800398BB0 /* blogger-sans.bold-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B528BDE76700398BB0 /* blogger-sans.bold-italic.otf */; };
+		C2C816EB28BDE76800398BB0 /* BloggerSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B628BDE76700398BB0 /* BloggerSans-Light.ttf */; };
+		C2C816EC28BDE76800398BB0 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B728BDE76700398BB0 /* Raleway-ThinItalic.ttf */; };
+		C2C816ED28BDE76800398BB0 /* blogger-sans.regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B828BDE76700398BB0 /* blogger-sans.regular.otf */; };
+		C2C816EE28BDE76800398BB0 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816B928BDE76700398BB0 /* Lato-LightItalic.ttf */; };
+		C2C816EF28BDE76800398BB0 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816BA28BDE76700398BB0 /* Raleway-Regular.ttf */; };
+		C2C816F028BDE76800398BB0 /* BloggerSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816BB28BDE76700398BB0 /* BloggerSans-MediumItalic.ttf */; };
+		C2C816F128BDE76800398BB0 /* blogger-sans.light-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816BC28BDE76700398BB0 /* blogger-sans.light-italic.otf */; };
+		C2C816F228BDE76800398BB0 /* BloggerSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816BD28BDE76700398BB0 /* BloggerSans-BoldItalic.ttf */; };
+		C2C816F328BDE76800398BB0 /* blogger-sans.medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816BE28BDE76700398BB0 /* blogger-sans.medium.otf */; };
+		C2C816F428BDE76800398BB0 /* BloggerSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816BF28BDE76700398BB0 /* BloggerSans.ttf */; };
+		C2C816F528BDE76800398BB0 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816C028BDE76700398BB0 /* Lato-BlackItalic.ttf */; };
+		C2C816F628BDE76800398BB0 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816C128BDE76700398BB0 /* Raleway-ExtraBold.ttf */; };
+		C2C816F728BDE76800398BB0 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816C228BDE76700398BB0 /* Raleway-ExtraLight.ttf */; };
+		C2C816F828BDE76800398BB0 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816C328BDE76700398BB0 /* Raleway-LightItalic.ttf */; };
+		C2C816F928BDE76800398BB0 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816C428BDE76700398BB0 /* Lato-ThinItalic.ttf */; };
+		C2C816FA28BDE76800398BB0 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C816C528BDE76700398BB0 /* Lato-Light.ttf */; };
+		C2C816FE28BDF57900398BB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2C816FD28BDF57900398BB0 /* GoogleService-Info.plist */; };
+		DB7C354F018DDF3631DED606 /* libPods-masterdiskon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A87FD9A972202F7B676044 /* libPods-masterdiskon.a */; };
+		EC436A79287C41DD8EB303C2 /* CGOTHICBI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5422C6414FF4B16B64E37B0 /* CGOTHICBI.ttf */; };
+		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* MasterDiskonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterDiskonTests.m; sourceTree = "<group>"; };
+		0202A799B09146209581C13B /* blogger-sans.italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blogger-sans.italic.otf"; path = "../app/assets/fonts/blogger-sans.italic.otf"; sourceTree = "<group>"; };
+		04105F2B55A7468F818E913A /* Raleway-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Thin.ttf"; path = "../app/assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		0E3690731CA1439297E43774 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../app/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		120FD21CDB00434AB7604BDF /* Blogger Sans-Light Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger Sans-Light Italic.ttf"; path = "../app/assets/fonts/Blogger Sans-Light Italic.ttf"; sourceTree = "<group>"; };
+		12DB866C399F4DEDB3547CC5 /* BloggerSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BloggerSans-LightItalic.ttf"; path = "../app/assets/fonts/BloggerSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* masterdiskon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masterdiskon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = masterdiskon/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = masterdiskon/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = masterdiskon/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = masterdiskon/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = masterdiskon/main.m; sourceTree = "<group>"; };
+		1C908AD9948D48579DD7FACD /* BloggerSans-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BloggerSans-MediumItalic.ttf"; path = "../app/assets/fonts/BloggerSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1DC101A2C5254FF2AD85E79F /* CenturyGothic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = CenturyGothic.ttf; path = ../app/assets/fonts/CenturyGothic.ttf; sourceTree = "<group>"; };
+		1EABCAB5C96648E8A8E2C745 /* Blogger-Sans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger-Sans-Bold.ttf"; path = "../app/assets/fonts/Blogger-Sans-Bold.ttf"; sourceTree = "<group>"; };
+		245FA7A264F7465A89E34D98 /* blogger-sans.bold-italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blogger-sans.bold-italic.otf"; path = "../app/assets/fonts/blogger-sans.bold-italic.otf"; sourceTree = "<group>"; };
+		264365573D894A0F9A9200F1 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		279C3C976F7F44AB88F509F2 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ThinItalic.ttf"; path = "../app/assets/fonts/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		2B8FDA991EB94021918A7C70 /* Blogger Sans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger Sans-Medium.ttf"; path = "../app/assets/fonts/Blogger Sans-Medium.ttf"; sourceTree = "<group>"; };
+		2E7CEDB802D649BE8E41DC64 /* Blogger Sans-Bold Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger Sans-Bold Italic.ttf"; path = "../app/assets/fonts/Blogger Sans-Bold Italic.ttf"; sourceTree = "<group>"; };
+		34E0886882084BB3AEF7FBAC /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		35C0B3D5E207491EA13D0707 /* Blogger-Sans-Medium-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger-Sans-Medium-Italic.ttf"; path = "../app/assets/fonts/Blogger-Sans-Medium-Italic.ttf"; sourceTree = "<group>"; };
+		3863BA92214B463A9D838CEB /* BloggerSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BloggerSans-Medium.ttf"; path = "../app/assets/fonts/BloggerSans-Medium.ttf"; sourceTree = "<group>"; };
+		39A9B44045C54C9FAB7222B4 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3F3AA51E27954AD39E4507FC /* BloggerSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BloggerSans-BoldItalic.ttf"; path = "../app/assets/fonts/BloggerSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		402F312FD57F4A13B459C4FE /* GOTHIC.TTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = GOTHIC.TTF; path = ../app/assets/fonts/GOTHIC.TTF; sourceTree = "<group>"; };
+		43AA223EBE4E47EFB927B26A /* Raleway-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light.ttf"; path = "../app/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		48806289D1324A8FAAC20DB0 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-MediumItalic.ttf"; path = "../app/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4B975FE569DD4ED98EE4E9E4 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Thin.ttf"; path = "../app/assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		4E45677E73F04640B0C6E68F /* blogger-sans.medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blogger-sans.medium.otf"; path = "../app/assets/fonts/blogger-sans.medium.otf"; sourceTree = "<group>"; };
+		50211F20F6964F17B609E0D7 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Italic.ttf"; path = "../app/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		513762011AA440F0BB4B1D7B /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger Sans-Bold.ttf"; path = "../app/assets/fonts/Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
+		539E2A71834D4DBBB7C39948 /* GOTHICB0.TTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = GOTHICB0.TTF; path = ../app/assets/fonts/GOTHICB0.TTF; sourceTree = "<group>"; };
+		544C243FD8A341559975FE59 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-LightItalic.ttf"; path = "../app/assets/fonts/Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		5774401753984CE588CB97F8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		5BFD8A767C0243D8BB2B8FBA /* blogger-sans.regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blogger-sans.regular.otf"; path = "../app/assets/fonts/blogger-sans.regular.otf"; sourceTree = "<group>"; };
+		5C6BE192C15F475FBCAE424B /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLight.ttf"; path = "../app/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5E30E13C60C84659A3A16415 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BlackItalic.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		63A87FD9A972202F7B676044 /* libPods-masterdiskon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-masterdiskon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		654C1BF1A8FD45558B80C109 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		65887442F6974D6ABF34E389 /* Blogger Sans-Medium Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger Sans-Medium Italic.ttf"; path = "../app/assets/fonts/Blogger Sans-Medium Italic.ttf"; sourceTree = "<group>"; };
+		66CC6FD1D4CC458FB5602B25 /* BloggerSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BloggerSans-Bold.ttf"; path = "../app/assets/fonts/BloggerSans-Bold.ttf"; sourceTree = "<group>"; };
+		6896DB3AA5B24278B4EBA5E1 /* blogger-sans.bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blogger-sans.bold.otf"; path = "../app/assets/fonts/blogger-sans.bold.otf"; sourceTree = "<group>"; };
+		693CEBFBAB4D4B5FB0813D25 /* Blogger-Sans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger-Sans-Medium.ttf"; path = "../app/assets/fonts/Blogger-Sans-Medium.ttf"; sourceTree = "<group>"; };
+		69EDA388F33F424FAFFCB4D9 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium.ttf"; path = "../app/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		6A5E07CA2AAD439CBAA1193F /* Blogger-Sans-Bold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger-Sans-Bold-Italic.ttf"; path = "../app/assets/fonts/Blogger-Sans-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		6C5AEBFFAC724B7EA87AA09A /* Raleway-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Italic.ttf"; path = "../app/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		6FAEFF88B2BC4F28AB913F4F /* Blogger-Sans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger-Sans-Italic.ttf"; path = "../app/assets/fonts/Blogger-Sans-Italic.ttf"; sourceTree = "<group>"; };
+		7D3D64B436484C319A41D84B /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ThinItalic.ttf"; path = "../app/assets/fonts/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7EDAE5BA22F5461B00678D8F /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		7EDAE5BB22F5461B00678D8F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		7EDAE5BC22F5461B00678D8F /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		7EDAE5BD22F5461C00678D8F /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		7EDAE5BE22F5461C00678D8F /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		7EDAE5BF22F5461C00678D8F /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		7EDAE5C022F5461C00678D8F /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		7EDAE5C122F5461C00678D8F /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		7EDAE5C222F5461C00678D8F /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		7EDAE5C322F5461C00678D8F /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		7EDAE5C422F5461C00678D8F /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		7EDAE5C522F5461C00678D8F /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		7EDAE5C622F5461C00678D8F /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		7EDAE5C722F5461C00678D8F /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		7EDAE5C822F5461C00678D8F /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		7EDAE5C922F5461C00678D8F /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		82195BC3255204B500ECD61B /* masterdiskon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "masterdiskon-Bridging-Header.h"; sourceTree = "<group>"; };
+		82195BC4255204B500ECD61B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		82222B192555FE0B0019D9C6 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "../app/assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		82222B1A2555FE0C0019D9C6 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../app/assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		82222B1B2555FE0C0019D9C6 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-ThinItalic.ttf"; path = "../app/assets/fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		82222B1C2555FE0C0019D9C6 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../app/assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		82222B1D2555FE0C0019D9C6 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../app/assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
+		82222B1E2555FE0C0019D9C6 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "../app/assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		82222B1F2555FE0C0019D9C6 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../app/assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		82222B202555FE0C0019D9C6 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../app/assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		82222B212555FE0D0019D9C6 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../app/assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		82222B222555FE0D0019D9C6 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../app/assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
+		8312A55B1BFC488A9382634C /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		866463D02746496BADC1455B /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		87FC5715EF18446EA9C42707 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		8A8BB11063FD4C9591F4B9B6 /* Century Gothic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Century Gothic.ttf"; path = "../app/assets/fonts/Century Gothic.ttf"; sourceTree = "<group>"; };
+		8BB185E0210C42CBA84C2CF1 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold.ttf"; path = "../app/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		9160F113008F4AB6980017B9 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		9C350AD2EC3F4B86AF7844B8 /* BloggerSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BloggerSans-Light.ttf"; path = "../app/assets/fonts/BloggerSans-Light.ttf"; sourceTree = "<group>"; };
+		9EC31A3B537240899026F190 /* Raleway-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Black.ttf"; path = "../app/assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; };
+		A306214D01184619A36485DA /* Blogger-Sans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger-Sans-Light.ttf"; path = "../app/assets/fonts/Blogger-Sans-Light.ttf"; sourceTree = "<group>"; };
+		A445F0BC14CD4EA6AC5AB64D /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-MediumItalic.ttf"; path = "../app/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A9923A0219F14C2E8D15F745 /* Raleway-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Black.ttf"; path = "../app/assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; };
+		AA264412822645DCBE0FFF4F /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLightItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		AA4AEE663EA94E69AFA5F8C2 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium.ttf"; path = "../app/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		B01FD514393249CE9B066547 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../app/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		B2CE36FBF4D840C8B7864A9A /* Blogger Sans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger Sans-Italic.ttf"; path = "../app/assets/fonts/Blogger Sans-Italic.ttf"; sourceTree = "<group>"; };
+		B3B3D6B668C147A181E5B476 /* BloggerSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BloggerSans-Italic.ttf"; path = "../app/assets/fonts/BloggerSans-Italic.ttf"; sourceTree = "<group>"; };
+		B5F51821C61E4411809C49AC /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-LightItalic.ttf"; path = "../app/assets/fonts/Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		BABC0A714578FB7CFD599DC8 /* Pods-masterdiskon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masterdiskon.release.xcconfig"; path = "Target Support Files/Pods-masterdiskon/Pods-masterdiskon.release.xcconfig"; sourceTree = "<group>"; };
+		BB969E9F5B0F444B97BCD9F8 /* gothicb.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gothicb.ttf; path = ../app/assets/fonts/gothicb.ttf; sourceTree = "<group>"; };
+		BD49FFC19F384CDB93413122 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BoldItalic.ttf"; path = "../app/assets/fonts/Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BE1D5694E48049D4A90333D5 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		BEA5387240B98FD3DE5FDC16 /* Pods-masterdiskon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-masterdiskon.debug.xcconfig"; path = "Target Support Files/Pods-masterdiskon/Pods-masterdiskon.debug.xcconfig"; sourceTree = "<group>"; };
+		BF34AC0E9E1844CB98C40113 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		C23E4C742857EE3600F2BE51 /* CGOTHICBI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CGOTHICBI.ttf; sourceTree = "<group>"; };
+		C268EE772593276E0079FC49 /* masterdiskon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = masterdiskon.entitlements; path = masterdiskon/masterdiskon.entitlements; sourceTree = "<group>"; };
+		C2C693E528572694002A2D7D /* BloggerSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BloggerSans-Italic.ttf"; sourceTree = "<group>"; };
+		C2C693E628572694002A2D7D /* BloggerSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BloggerSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C2C693E728572695002A2D7D /* BloggerSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BloggerSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		C2C693E828572695002A2D7D /* BloggerSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BloggerSans-Light.ttf"; sourceTree = "<group>"; };
+		C2C693E928572696002A2D7D /* BloggerSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BloggerSans-Medium.ttf"; sourceTree = "<group>"; };
+		C2C693EA28572696002A2D7D /* BloggerSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BloggerSans-Bold.ttf"; sourceTree = "<group>"; };
+		C2C693EB28572696002A2D7D /* BloggerSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BloggerSans.ttf; sourceTree = "<group>"; };
+		C2C693EC28572697002A2D7D /* BloggerSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BloggerSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C2C693F528573060002A2D7D /* blogger-sans.medium-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.medium-italic.otf"; sourceTree = "<group>"; };
+		C2C693F628573060002A2D7D /* blogger-sans.bold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.bold-italic.otf"; sourceTree = "<group>"; };
+		C2C693F728573060002A2D7D /* blogger-sans.light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.light.otf"; sourceTree = "<group>"; };
+		C2C693F828573061002A2D7D /* blogger-sans.bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.bold.otf"; sourceTree = "<group>"; };
+		C2C693F928573061002A2D7D /* blogger-sans.italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.italic.otf"; sourceTree = "<group>"; };
+		C2C693FA28573061002A2D7D /* blogger-sans.medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.medium.otf"; sourceTree = "<group>"; };
+		C2C693FB28573062002A2D7D /* blogger-sans.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.regular.otf"; sourceTree = "<group>"; };
+		C2C693FC28573062002A2D7D /* blogger-sans.light-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "blogger-sans.light-italic.otf"; sourceTree = "<group>"; };
+		C2C6941528573819002A2D7D /* Blogger-Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger-Sans.ttf"; sourceTree = "<group>"; };
+		C2C6941728573828002A2D7D /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans.ttf"; sourceTree = "<group>"; };
+		C2C694192857403A002A2D7D /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
+		C2C6941A2857403B002A2D7D /* Blogger Sans-Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blogger Sans-Bold Italic.ttf"; sourceTree = "<group>"; };
+		C2C8169028BDE76600398BB0 /* GOTHIC.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = GOTHIC.TTF; path = ../app/assets/fonts/GOTHIC.TTF; sourceTree = "<group>"; };
+		C2C8169128BDE76600398BB0 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-BlackItalic.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C2C8169228BDE76600398BB0 /* blogger-sans.medium-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blogger-sans.medium-italic.otf"; path = "../app/assets/fonts/blogger-sans.medium-italic.otf"; sourceTree = "<group>"; };
+		C2C8169328BDE76600398BB0 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Bold.ttf"; path = "../app/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		C2C8169428BDE76600398BB0 /* Blogger Sans-Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Bold Italic.ttf"; path = "../app/assets/fonts/Blogger Sans-Bold Italic.ttf"; sourceTree = "<group>"; };
+		C2C8169528BDE76600398BB0 /* BloggerSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BloggerSans-Bold.ttf"; path = "../app/assets/fonts/BloggerSans-Bold.ttf"; sourceTree = "<group>"; };
+		C2C8169628BDE76600398BB0 /* blogger-sans.bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blogger-sans.bold.otf"; path = "../app/assets/fonts/blogger-sans.bold.otf"; sourceTree = "<group>"; };
+		C2C8169728BDE76600398BB0 /* BloggerSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BloggerSans-LightItalic.ttf"; path = "../app/assets/fonts/BloggerSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		C2C8169828BDE76600398BB0 /* GOTHICB0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = GOTHICB0.TTF; path = ../app/assets/fonts/GOTHICB0.TTF; sourceTree = "<group>"; };
+		C2C8169928BDE76600398BB0 /* BloggerSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BloggerSans-Italic.ttf"; path = "../app/assets/fonts/BloggerSans-Italic.ttf"; sourceTree = "<group>"; };
+		C2C8169A28BDE76600398BB0 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../app/assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
+		C2C8169B28BDE76600398BB0 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-BoldItalic.ttf"; path = "../app/assets/fonts/Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C2C8169C28BDE76600398BB0 /* CenturyGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CenturyGothic.ttf; path = ../app/assets/fonts/CenturyGothic.ttf; sourceTree = "<group>"; };
+		C2C8169D28BDE76600398BB0 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../app/assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		C2C8169E28BDE76600398BB0 /* Blogger-Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger-Sans.ttf"; path = "../app/assets/fonts/Blogger-Sans.ttf"; sourceTree = "<group>"; };
+		C2C8169F28BDE76600398BB0 /* Century Gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Century Gothic.ttf"; path = "../app/assets/fonts/Century Gothic.ttf"; sourceTree = "<group>"; };
+		C2C816A028BDE76600398BB0 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BoldItalic.ttf"; path = "../app/assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C2C816A128BDE76600398BB0 /* blogger-sans.italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blogger-sans.italic.otf"; path = "../app/assets/fonts/blogger-sans.italic.otf"; sourceTree = "<group>"; };
+		C2C816A228BDE76600398BB0 /* CGOTHICBI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CGOTHICBI.ttf; path = ../app/assets/fonts/CGOTHICBI.ttf; sourceTree = "<group>"; };
+		C2C816A328BDE76600398BB0 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Medium.ttf"; path = "../app/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		C2C816A428BDE76600398BB0 /* blogger-sans.light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blogger-sans.light.otf"; path = "../app/assets/fonts/blogger-sans.light.otf"; sourceTree = "<group>"; };
+		C2C816A528BDE76600398BB0 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Light.ttf"; path = "../app/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		C2C816A628BDE76600398BB0 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../app/assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		C2C816A728BDE76600398BB0 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		C2C816A828BDE76600398BB0 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Thin.ttf"; path = "../app/assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		C2C816A928BDE76700398BB0 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-MediumItalic.ttf"; path = "../app/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C2C816AA28BDE76700398BB0 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Italic.ttf"; path = "../app/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		C2C816AB28BDE76700398BB0 /* Blogger Sans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans-Bold.ttf"; path = "../app/assets/fonts/Blogger Sans-Bold.ttf"; sourceTree = "<group>"; };
+		C2C816AC28BDE76700398BB0 /* Blogger Sans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Blogger Sans.ttf"; path = "../app/assets/fonts/Blogger Sans.ttf"; sourceTree = "<group>"; };
+		C2C816AD28BDE76700398BB0 /* BloggerSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BloggerSans-Medium.ttf"; path = "../app/assets/fonts/BloggerSans-Medium.ttf"; sourceTree = "<group>"; };
+		C2C816AE28BDE76700398BB0 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../app/assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		C2C816AF28BDE76700398BB0 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraLightItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		C2C816B028BDE76700398BB0 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		C2C816B128BDE76700398BB0 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-SemiBold.ttf"; path = "../app/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		C2C816B228BDE76700398BB0 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Black.ttf"; path = "../app/assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; };
+		C2C816B328BDE76700398BB0 /* gothicb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothicb.ttf; path = ../app/assets/fonts/gothicb.ttf; sourceTree = "<group>"; };
+		C2C816B428BDE76700398BB0 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "../app/assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
+		C2C816B528BDE76700398BB0 /* blogger-sans.bold-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blogger-sans.bold-italic.otf"; path = "../app/assets/fonts/blogger-sans.bold-italic.otf"; sourceTree = "<group>"; };
+		C2C816B628BDE76700398BB0 /* BloggerSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BloggerSans-Light.ttf"; path = "../app/assets/fonts/BloggerSans-Light.ttf"; sourceTree = "<group>"; };
+		C2C816B728BDE76700398BB0 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ThinItalic.ttf"; path = "../app/assets/fonts/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C2C816B828BDE76700398BB0 /* blogger-sans.regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blogger-sans.regular.otf"; path = "../app/assets/fonts/blogger-sans.regular.otf"; sourceTree = "<group>"; };
+		C2C816B928BDE76700398BB0 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-LightItalic.ttf"; path = "../app/assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		C2C816BA28BDE76700398BB0 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../app/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		C2C816BB28BDE76700398BB0 /* BloggerSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BloggerSans-MediumItalic.ttf"; path = "../app/assets/fonts/BloggerSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C2C816BC28BDE76700398BB0 /* blogger-sans.light-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blogger-sans.light-italic.otf"; path = "../app/assets/fonts/blogger-sans.light-italic.otf"; sourceTree = "<group>"; };
+		C2C816BD28BDE76700398BB0 /* BloggerSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BloggerSans-BoldItalic.ttf"; path = "../app/assets/fonts/BloggerSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C2C816BE28BDE76700398BB0 /* blogger-sans.medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blogger-sans.medium.otf"; path = "../app/assets/fonts/blogger-sans.medium.otf"; sourceTree = "<group>"; };
+		C2C816BF28BDE76700398BB0 /* BloggerSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BloggerSans.ttf; path = ../app/assets/fonts/BloggerSans.ttf; sourceTree = "<group>"; };
+		C2C816C028BDE76700398BB0 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-BlackItalic.ttf"; path = "../app/assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C2C816C128BDE76700398BB0 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraBold.ttf"; path = "../app/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C2C816C228BDE76700398BB0 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraLight.ttf"; path = "../app/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C2C816C328BDE76700398BB0 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-LightItalic.ttf"; path = "../app/assets/fonts/Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		C2C816C428BDE76700398BB0 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-ThinItalic.ttf"; path = "../app/assets/fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C2C816C528BDE76700398BB0 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../app/assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		C2C816FD28BDF57900398BB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "masterdiskon/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3AEF5C1CC3F436E8EE5CA34 /* Raleway-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light.ttf"; path = "../app/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		C6678991E47C45E98879E8DC /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLight.ttf"; path = "../app/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C8EB1EB066234ACDBC6E3265 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BoldItalic.ttf"; path = "../app/assets/fonts/Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CAD7176F3A8944379C734D53 /* Blogger-Sans.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger-Sans.ttf"; path = "../app/assets/fonts/Blogger-Sans.ttf"; sourceTree = "<group>"; };
+		CD4BF96C0DAD41EC97E20652 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		CD4FA5F8810A4962BA7E6B81 /* blogger-sans.light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blogger-sans.light.otf"; path = "../app/assets/fonts/blogger-sans.light.otf"; sourceTree = "<group>"; };
+		D957D3662B2B4C5594996043 /* blogger-sans.medium-italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blogger-sans.medium-italic.otf"; path = "../app/assets/fonts/blogger-sans.medium-italic.otf"; sourceTree = "<group>"; };
+		D9A392AB62C9407FBC8FC3F0 /* Blogger Sans.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger Sans.ttf"; path = "../app/assets/fonts/Blogger Sans.ttf"; sourceTree = "<group>"; };
+		E0C6C53EADF446C1A88DF2C5 /* blogger-sans.light-italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "blogger-sans.light-italic.otf"; path = "../app/assets/fonts/blogger-sans.light-italic.otf"; sourceTree = "<group>"; };
+		E23387553A504934981AE876 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../app/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		E5422C6414FF4B16B64E37B0 /* CGOTHICBI.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = CGOTHICBI.ttf; path = ../app/assets/fonts/CGOTHICBI.ttf; sourceTree = "<group>"; };
+		E7FDD2C374AC4272A15D7B4E /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold.ttf"; path = "../app/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EF3869240F8240A9830B3CC4 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLightItalic.ttf"; path = "../app/assets/fonts/Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F2D2EA60E9814F14BA019639 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BlackItalic.ttf"; path = "../app/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F76798E2523243618F46C194 /* Blogger Sans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Blogger Sans-Light.ttf"; path = "../app/assets/fonts/Blogger Sans-Light.ttf"; sourceTree = "<group>"; };
+		F8655FAE6BC0431785A847F9 /* BloggerSans.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = BloggerSans.ttf; path = ../app/assets/fonts/BloggerSans.ttf; sourceTree = "<group>"; };
+		F9B9764251D043D18DF1F142 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		FBEACA623EAB42D2AF81ADFD /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../app/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
+				DB7C354F018DDF3631DED606 /* libPods-masterdiskon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* MasterDiskonTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* MasterDiskonTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = MasterDiskonTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* masterdiskon */ = {
+			isa = PBXGroup;
+			children = (
+				C2C816FD28BDF57900398BB0 /* GoogleService-Info.plist */,
+				C268EE772593276E0079FC49 /* masterdiskon.entitlements */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = masterdiskon;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				63A87FD9A972202F7B676044 /* libPods-masterdiskon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EBB4F03669F4705A419B476 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				82222B1D2555FE0C0019D9C6 /* Lato-Black.ttf */,
+				82222B1E2555FE0C0019D9C6 /* Lato-BlackItalic.ttf */,
+				82222B1F2555FE0C0019D9C6 /* Lato-Bold.ttf */,
+				82222B192555FE0B0019D9C6 /* Lato-BoldItalic.ttf */,
+				82222B1A2555FE0C0019D9C6 /* Lato-Italic.ttf */,
+				82222B1C2555FE0C0019D9C6 /* Lato-Light.ttf */,
+				82222B202555FE0C0019D9C6 /* Lato-LightItalic.ttf */,
+				82222B212555FE0D0019D9C6 /* Lato-Regular.ttf */,
+				82222B222555FE0D0019D9C6 /* Lato-Thin.ttf */,
+				82222B1B2555FE0C0019D9C6 /* Lato-ThinItalic.ttf */,
+				F9B9764251D043D18DF1F142 /* Feather.ttf */,
+				CD4BF96C0DAD41EC97E20652 /* FontAwesome5_Brands.ttf */,
+				BE1D5694E48049D4A90333D5 /* FontAwesome5_Regular.ttf */,
+				7EDAE5C822F5461C00678D8F /* Entypo.ttf */,
+				7EDAE5C222F5461C00678D8F /* EvilIcons.ttf */,
+				7EDAE5C622F5461C00678D8F /* Feather.ttf */,
+				7EDAE5C022F5461C00678D8F /* FontAwesome.ttf */,
+				7EDAE5C122F5461C00678D8F /* FontAwesome5_Brands.ttf */,
+				7EDAE5C922F5461C00678D8F /* FontAwesome5_Regular.ttf */,
+				866463D02746496BADC1455B /* FontAwesome5_Solid.ttf */,
+				8312A55B1BFC488A9382634C /* Ionicons.ttf */,
+				87FC5715EF18446EA9C42707 /* MaterialCommunityIcons.ttf */,
+				7EDAE5BC22F5461B00678D8F /* Ionicons.ttf */,
+				7EDAE5C422F5461C00678D8F /* MaterialCommunityIcons.ttf */,
+				7EDAE5C722F5461C00678D8F /* MaterialIcons.ttf */,
+				7EDAE5C322F5461C00678D8F /* Octicons.ttf */,
+				5774401753984CE588CB97F8 /* SimpleLineIcons.ttf */,
+				A9923A0219F14C2E8D15F745 /* Raleway-Black.ttf */,
+				5E30E13C60C84659A3A16415 /* Raleway-BlackItalic.ttf */,
+				FBEACA623EAB42D2AF81ADFD /* Raleway-Bold.ttf */,
+				C8EB1EB066234ACDBC6E3265 /* Raleway-BoldItalic.ttf */,
+				264365573D894A0F9A9200F1 /* Raleway-ExtraBold.ttf */,
+				654C1BF1A8FD45558B80C109 /* Raleway-ExtraBoldItalic.ttf */,
+				5C6BE192C15F475FBCAE424B /* Raleway-ExtraLight.ttf */,
+				7EDAE5BD22F5461C00678D8F /* AntDesign.ttf */,
+				7EDAE5BF22F5461C00678D8F /* FontAwesome5_Solid.ttf */,
+				7EDAE5BE22F5461C00678D8F /* Fontisto.ttf */,
+				7EDAE5BA22F5461B00678D8F /* Foundation.ttf */,
+				7EDAE5BB22F5461B00678D8F /* SimpleLineIcons.ttf */,
+				7EDAE5C522F5461C00678D8F /* Zocial.ttf */,
+				EF3869240F8240A9830B3CC4 /* Raleway-ExtraLightItalic.ttf */,
+				50211F20F6964F17B609E0D7 /* Raleway-Italic.ttf */,
+				43AA223EBE4E47EFB927B26A /* Raleway-Light.ttf */,
+				544C243FD8A341559975FE59 /* Raleway-LightItalic.ttf */,
+				69EDA388F33F424FAFFCB4D9 /* Raleway-Medium.ttf */,
+				A445F0BC14CD4EA6AC5AB64D /* Raleway-MediumItalic.ttf */,
+				B01FD514393249CE9B066547 /* Raleway-Regular.ttf */,
+				8BB185E0210C42CBA84C2CF1 /* Raleway-SemiBold.ttf */,
+				34E0886882084BB3AEF7FBAC /* Raleway-SemiBoldItalic.ttf */,
+				4B975FE569DD4ED98EE4E9E4 /* Raleway-Thin.ttf */,
+				279C3C976F7F44AB88F509F2 /* Raleway-ThinItalic.ttf */,
+				9EC31A3B537240899026F190 /* Raleway-Black.ttf */,
+				F2D2EA60E9814F14BA019639 /* Raleway-BlackItalic.ttf */,
+				E23387553A504934981AE876 /* Raleway-Bold.ttf */,
+				BD49FFC19F384CDB93413122 /* Raleway-BoldItalic.ttf */,
+				9160F113008F4AB6980017B9 /* Raleway-ExtraBold.ttf */,
+				BF34AC0E9E1844CB98C40113 /* Raleway-ExtraBoldItalic.ttf */,
+				C6678991E47C45E98879E8DC /* Raleway-ExtraLight.ttf */,
+				AA264412822645DCBE0FFF4F /* Raleway-ExtraLightItalic.ttf */,
+				6C5AEBFFAC724B7EA87AA09A /* Raleway-Italic.ttf */,
+				C3AEF5C1CC3F436E8EE5CA34 /* Raleway-Light.ttf */,
+				B5F51821C61E4411809C49AC /* Raleway-LightItalic.ttf */,
+				AA4AEE663EA94E69AFA5F8C2 /* Raleway-Medium.ttf */,
+				48806289D1324A8FAAC20DB0 /* Raleway-MediumItalic.ttf */,
+				0E3690731CA1439297E43774 /* Raleway-Regular.ttf */,
+				E7FDD2C374AC4272A15D7B4E /* Raleway-SemiBold.ttf */,
+				39A9B44045C54C9FAB7222B4 /* Raleway-SemiBoldItalic.ttf */,
+				04105F2B55A7468F818E913A /* Raleway-Thin.ttf */,
+				7D3D64B436484C319A41D84B /* Raleway-ThinItalic.ttf */,
+				2E7CEDB802D649BE8E41DC64 /* Blogger Sans-Bold Italic.ttf */,
+				513762011AA440F0BB4B1D7B /* Blogger Sans-Bold.ttf */,
+				B2CE36FBF4D840C8B7864A9A /* Blogger Sans-Italic.ttf */,
+				120FD21CDB00434AB7604BDF /* Blogger Sans-Light Italic.ttf */,
+				F76798E2523243618F46C194 /* Blogger Sans-Light.ttf */,
+				65887442F6974D6ABF34E389 /* Blogger Sans-Medium Italic.ttf */,
+				2B8FDA991EB94021918A7C70 /* Blogger Sans-Medium.ttf */,
+				D9A392AB62C9407FBC8FC3F0 /* Blogger Sans.ttf */,
+				6A5E07CA2AAD439CBAA1193F /* Blogger-Sans-Bold-Italic.ttf */,
+				1EABCAB5C96648E8A8E2C745 /* Blogger-Sans-Bold.ttf */,
+				6FAEFF88B2BC4F28AB913F4F /* Blogger-Sans-Italic.ttf */,
+				A306214D01184619A36485DA /* Blogger-Sans-Light.ttf */,
+				35C0B3D5E207491EA13D0707 /* Blogger-Sans-Medium-Italic.ttf */,
+				693CEBFBAB4D4B5FB0813D25 /* Blogger-Sans-Medium.ttf */,
+				CAD7176F3A8944379C734D53 /* Blogger-Sans.ttf */,
+				66CC6FD1D4CC458FB5602B25 /* BloggerSans-Bold.ttf */,
+				3F3AA51E27954AD39E4507FC /* BloggerSans-BoldItalic.ttf */,
+				B3B3D6B668C147A181E5B476 /* BloggerSans-Italic.ttf */,
+				9C350AD2EC3F4B86AF7844B8 /* BloggerSans-Light.ttf */,
+				12DB866C399F4DEDB3547CC5 /* BloggerSans-LightItalic.ttf */,
+				3863BA92214B463A9D838CEB /* BloggerSans-Medium.ttf */,
+				1C908AD9948D48579DD7FACD /* BloggerSans-MediumItalic.ttf */,
+				F8655FAE6BC0431785A847F9 /* BloggerSans.ttf */,
+				8A8BB11063FD4C9591F4B9B6 /* Century Gothic.ttf */,
+				1DC101A2C5254FF2AD85E79F /* CenturyGothic.ttf */,
+				402F312FD57F4A13B459C4FE /* GOTHIC.TTF */,
+				BB969E9F5B0F444B97BCD9F8 /* gothicb.ttf */,
+				539E2A71834D4DBBB7C39948 /* GOTHICB0.TTF */,
+				245FA7A264F7465A89E34D98 /* blogger-sans.bold-italic.otf */,
+				6896DB3AA5B24278B4EBA5E1 /* blogger-sans.bold.otf */,
+				0202A799B09146209581C13B /* blogger-sans.italic.otf */,
+				E0C6C53EADF446C1A88DF2C5 /* blogger-sans.light-italic.otf */,
+				CD4FA5F8810A4962BA7E6B81 /* blogger-sans.light.otf */,
+				D957D3662B2B4C5594996043 /* blogger-sans.medium-italic.otf */,
+				4E45677E73F04640B0C6E68F /* blogger-sans.medium.otf */,
+				5BFD8A767C0243D8BB2B8FBA /* blogger-sans.regular.otf */,
+				E5422C6414FF4B16B64E37B0 /* CGOTHICBI.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				C2C816BE28BDE76700398BB0 /* blogger-sans.medium.otf */,
+				C2C816B828BDE76700398BB0 /* blogger-sans.regular.otf */,
+				C2C8169E28BDE76600398BB0 /* Blogger-Sans.ttf */,
+				C2C693EA28572696002A2D7D /* BloggerSans-Bold.ttf */,
+				C2C693EC28572697002A2D7D /* BloggerSans-BoldItalic.ttf */,
+				C2C816BD28BDE76700398BB0 /* BloggerSans-BoldItalic.ttf */,
+				C2C693E528572694002A2D7D /* BloggerSans-Italic.ttf */,
+				C2C693E828572695002A2D7D /* BloggerSans-Light.ttf */,
+				C2C8169928BDE76600398BB0 /* BloggerSans-Italic.ttf */,
+				C2C816B628BDE76700398BB0 /* BloggerSans-Light.ttf */,
+				C2C693E728572695002A2D7D /* BloggerSans-LightItalic.ttf */,
+				C2C693E928572696002A2D7D /* BloggerSans-Medium.ttf */,
+				C2C693E628572694002A2D7D /* BloggerSans-MediumItalic.ttf */,
+				C2C693EB28572696002A2D7D /* BloggerSans.ttf */,
+				C2C693F628573060002A2D7D /* blogger-sans.bold-italic.otf */,
+				C2C816AB28BDE76700398BB0 /* Blogger Sans-Bold.ttf */,
+				C2C816AC28BDE76700398BB0 /* Blogger Sans.ttf */,
+				C2C816B528BDE76700398BB0 /* blogger-sans.bold-italic.otf */,
+				C2C693F828573061002A2D7D /* blogger-sans.bold.otf */,
+				C2C693F928573061002A2D7D /* blogger-sans.italic.otf */,
+				C2C693FC28573062002A2D7D /* blogger-sans.light-italic.otf */,
+				C2C816BC28BDE76700398BB0 /* blogger-sans.light-italic.otf */,
+				C2C693F728573060002A2D7D /* blogger-sans.light.otf */,
+				C2C8169428BDE76600398BB0 /* Blogger Sans-Bold Italic.ttf */,
+				C2C8169628BDE76600398BB0 /* blogger-sans.bold.otf */,
+				C2C816A128BDE76600398BB0 /* blogger-sans.italic.otf */,
+				C2C816A428BDE76600398BB0 /* blogger-sans.light.otf */,
+				C2C693F528573060002A2D7D /* blogger-sans.medium-italic.otf */,
+				C2C693FA28573061002A2D7D /* blogger-sans.medium.otf */,
+				C2C693FB28573062002A2D7D /* blogger-sans.regular.otf */,
+				C2C6941528573819002A2D7D /* Blogger-Sans.ttf */,
+				C2C6941728573828002A2D7D /* Blogger Sans.ttf */,
+				C2C6941A2857403B002A2D7D /* Blogger Sans-Bold Italic.ttf */,
+				C2C694192857403A002A2D7D /* Blogger Sans-Bold.ttf */,
+				C23E4C742857EE3600F2BE51 /* CGOTHICBI.ttf */,
+				C2C8169228BDE76600398BB0 /* blogger-sans.medium-italic.otf */,
+				C2C8169528BDE76600398BB0 /* BloggerSans-Bold.ttf */,
+				C2C8169728BDE76600398BB0 /* BloggerSans-LightItalic.ttf */,
+				C2C816AD28BDE76700398BB0 /* BloggerSans-Medium.ttf */,
+				C2C816BB28BDE76700398BB0 /* BloggerSans-MediumItalic.ttf */,
+				C2C816BF28BDE76700398BB0 /* BloggerSans.ttf */,
+				C2C8169F28BDE76600398BB0 /* Century Gothic.ttf */,
+				C2C8169C28BDE76600398BB0 /* CenturyGothic.ttf */,
+				C2C816A228BDE76600398BB0 /* CGOTHICBI.ttf */,
+				C2C8169028BDE76600398BB0 /* GOTHIC.TTF */,
+				C2C816B328BDE76700398BB0 /* gothicb.ttf */,
+				C2C8169828BDE76600398BB0 /* GOTHICB0.TTF */,
+				C2C8169A28BDE76600398BB0 /* Lato-Black.ttf */,
+				C2C816C028BDE76700398BB0 /* Lato-BlackItalic.ttf */,
+				C2C816A628BDE76600398BB0 /* Lato-Bold.ttf */,
+				C2C816A028BDE76600398BB0 /* Lato-BoldItalic.ttf */,
+				C2C816AE28BDE76700398BB0 /* Lato-Italic.ttf */,
+				C2C816C528BDE76700398BB0 /* Lato-Light.ttf */,
+				C2C816B928BDE76700398BB0 /* Lato-LightItalic.ttf */,
+				C2C8169D28BDE76600398BB0 /* Lato-Regular.ttf */,
+				C2C816B428BDE76700398BB0 /* Lato-Thin.ttf */,
+				C2C816C428BDE76700398BB0 /* Lato-ThinItalic.ttf */,
+				C2C816B228BDE76700398BB0 /* Raleway-Black.ttf */,
+				C2C8169128BDE76600398BB0 /* Raleway-BlackItalic.ttf */,
+				C2C8169328BDE76600398BB0 /* Raleway-Bold.ttf */,
+				C2C8169B28BDE76600398BB0 /* Raleway-BoldItalic.ttf */,
+				C2C816C128BDE76700398BB0 /* Raleway-ExtraBold.ttf */,
+				C2C816B028BDE76700398BB0 /* Raleway-ExtraBoldItalic.ttf */,
+				C2C816C228BDE76700398BB0 /* Raleway-ExtraLight.ttf */,
+				C2C816AF28BDE76700398BB0 /* Raleway-ExtraLightItalic.ttf */,
+				C2C816AA28BDE76700398BB0 /* Raleway-Italic.ttf */,
+				C2C816A528BDE76600398BB0 /* Raleway-Light.ttf */,
+				C2C816C328BDE76700398BB0 /* Raleway-LightItalic.ttf */,
+				C2C816A328BDE76600398BB0 /* Raleway-Medium.ttf */,
+				C2C816A928BDE76700398BB0 /* Raleway-MediumItalic.ttf */,
+				C2C816BA28BDE76700398BB0 /* Raleway-Regular.ttf */,
+				C2C816B128BDE76700398BB0 /* Raleway-SemiBold.ttf */,
+				C2C816A728BDE76600398BB0 /* Raleway-SemiBoldItalic.ttf */,
+				C2C816A828BDE76600398BB0 /* Raleway-Thin.ttf */,
+				C2C816B728BDE76700398BB0 /* Raleway-ThinItalic.ttf */,
+				82195BC4255204B500ECD61B /* File.swift */,
+				13B07FAE1A68108700A75B9A /* masterdiskon */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* MasterDiskonTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				7EBB4F03669F4705A419B476 /* Resources */,
+				EDF8B93222308B30007D1EFB /* Recovered References */,
+				82195BC3255204B500ECD61B /* masterdiskon-Bridging-Header.h */,
+				A968F9F2007B1D120E137759 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* masterdiskon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A968F9F2007B1D120E137759 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEA5387240B98FD3DE5FDC16 /* Pods-masterdiskon.debug.xcconfig */,
+				BABC0A714578FB7CFD599DC8 /* Pods-masterdiskon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDF8B93222308B30007D1EFB /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* masterdiskon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "masterdiskon" */;
+			buildPhases = (
+				07F29FEE25C3A5CE0DB03E02 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				C5451235037F5AEAF2E9033C /* [CP] Embed Pods Frameworks */,
+				B72E246BE3E369198050E87D /* [CP] Copy Pods Resources */,
+				7E370EE934550E85A201DC52 /* [CP-User] [RNFB] Core Configuration */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = masterdiskon;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* masterdiskon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "masterdiskon" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* masterdiskon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C8168F28BDE03300398BB0 /* Images.xcassets in Resources */,
+				C2C8168E28BDD76900398BB0 /* LaunchScreen.xib in Resources */,
+				C2C816C628BDE76700398BB0 /* GOTHIC.TTF in Resources */,
+				C2C816C728BDE76700398BB0 /* Raleway-BlackItalic.ttf in Resources */,
+				C2C816C828BDE76700398BB0 /* blogger-sans.medium-italic.otf in Resources */,
+				C2C816C928BDE76700398BB0 /* Raleway-Bold.ttf in Resources */,
+				C2C816CA28BDE76700398BB0 /* Blogger Sans-Bold Italic.ttf in Resources */,
+				C2C816CB28BDE76700398BB0 /* BloggerSans-Bold.ttf in Resources */,
+				C2C816CC28BDE76700398BB0 /* blogger-sans.bold.otf in Resources */,
+				C2C816CD28BDE76700398BB0 /* BloggerSans-LightItalic.ttf in Resources */,
+				C2C816CE28BDE76700398BB0 /* GOTHICB0.TTF in Resources */,
+				C2C816FE28BDF57900398BB0 /* GoogleService-Info.plist in Resources */,
+				C2C816CF28BDE76700398BB0 /* BloggerSans-Italic.ttf in Resources */,
+				C2C816D028BDE76800398BB0 /* Lato-Black.ttf in Resources */,
+				C2C816D128BDE76800398BB0 /* Raleway-BoldItalic.ttf in Resources */,
+				C2C816D228BDE76800398BB0 /* CenturyGothic.ttf in Resources */,
+				C2C816D328BDE76800398BB0 /* Lato-Regular.ttf in Resources */,
+				C2C816D428BDE76800398BB0 /* Blogger-Sans.ttf in Resources */,
+				C2C816D528BDE76800398BB0 /* Century Gothic.ttf in Resources */,
+				C2C816D628BDE76800398BB0 /* Lato-BoldItalic.ttf in Resources */,
+				C2C816D728BDE76800398BB0 /* blogger-sans.italic.otf in Resources */,
+				EC436A79287C41DD8EB303C2 /* CGOTHICBI.ttf in Resources */,
+				C2C816D828BDE76800398BB0 /* Raleway-Medium.ttf in Resources */,
+				C2C816D928BDE76800398BB0 /* blogger-sans.light.otf in Resources */,
+				C2C816DA28BDE76800398BB0 /* Raleway-Light.ttf in Resources */,
+				C2C816DB28BDE76800398BB0 /* Lato-Bold.ttf in Resources */,
+				C2C816DC28BDE76800398BB0 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				C2C816DD28BDE76800398BB0 /* Raleway-Thin.ttf in Resources */,
+				C2C816DE28BDE76800398BB0 /* Raleway-MediumItalic.ttf in Resources */,
+				C2C816DF28BDE76800398BB0 /* Raleway-Italic.ttf in Resources */,
+				C2C816E028BDE76800398BB0 /* Blogger Sans-Bold.ttf in Resources */,
+				C2C816E128BDE76800398BB0 /* Blogger Sans.ttf in Resources */,
+				C2C816E228BDE76800398BB0 /* BloggerSans-Medium.ttf in Resources */,
+				C2C816E328BDE76800398BB0 /* Lato-Italic.ttf in Resources */,
+				C2C816E428BDE76800398BB0 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				C2C816E528BDE76800398BB0 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				C2C816E628BDE76800398BB0 /* Raleway-SemiBold.ttf in Resources */,
+				C2C816E728BDE76800398BB0 /* Raleway-Black.ttf in Resources */,
+				C2C816E828BDE76800398BB0 /* gothicb.ttf in Resources */,
+				C2C816E928BDE76800398BB0 /* Lato-Thin.ttf in Resources */,
+				C2C816EA28BDE76800398BB0 /* blogger-sans.bold-italic.otf in Resources */,
+				C2C816EB28BDE76800398BB0 /* BloggerSans-Light.ttf in Resources */,
+				C2C816EC28BDE76800398BB0 /* Raleway-ThinItalic.ttf in Resources */,
+				C2C816ED28BDE76800398BB0 /* blogger-sans.regular.otf in Resources */,
+				C2C816EE28BDE76800398BB0 /* Lato-LightItalic.ttf in Resources */,
+				C2C816EF28BDE76800398BB0 /* Raleway-Regular.ttf in Resources */,
+				C2C816F028BDE76800398BB0 /* BloggerSans-MediumItalic.ttf in Resources */,
+				C2C816F128BDE76800398BB0 /* blogger-sans.light-italic.otf in Resources */,
+				C2C816F228BDE76800398BB0 /* BloggerSans-BoldItalic.ttf in Resources */,
+				C2C816F328BDE76800398BB0 /* blogger-sans.medium.otf in Resources */,
+				C2C816F428BDE76800398BB0 /* BloggerSans.ttf in Resources */,
+				C2C816F528BDE76800398BB0 /* Lato-BlackItalic.ttf in Resources */,
+				C2C816F628BDE76800398BB0 /* Raleway-ExtraBold.ttf in Resources */,
+				C2C816F728BDE76800398BB0 /* Raleway-ExtraLight.ttf in Resources */,
+				C2C816F828BDE76800398BB0 /* Raleway-LightItalic.ttf in Resources */,
+				C2C816F928BDE76800398BB0 /* Lato-ThinItalic.ttf in Resources */,
+				C2C816FA28BDE76800398BB0 /* Lato-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		07F29FEE25C3A5CE0DB03E02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-masterdiskon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E370EE934550E85A201DC52 /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    _JSON_OUTPUT_BASE64=$(python -c 'import json,sys,base64;print(base64.b64encode(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"').read())['${_JSON_ROOT}'])))' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\n\n  # config.admob_delay_app_measurement_init\n  _ADMOB_DELAY_APP_MEASUREMENT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"admob_delay_app_measurement_init\")\n  if [[ $_ADMOB_DELAY_APP_MEASUREMENT == \"true\" ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GADDelayAppMeasurementInit\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"YES\")\n  fi\n\n  # config.admob_ios_app_id\n  _ADMOB_IOS_APP_ID=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"admob_ios_app_id\")\n  if [[ $_ADMOB_IOS_APP_ID ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GADApplicationIdentifier\")\n    _PLIST_ENTRY_TYPES+=(\"string\")\n    _PLIST_ENTRY_VALUES+=(\"$_ADMOB_IOS_APP_ID\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		B72E246BE3E369198050E87D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-masterdiskon/Pods-masterdiskon-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNImageCropPicker/QBImagePicker.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/TOCropViewController/TOCropViewControllerBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TOCropViewControllerBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-masterdiskon/Pods-masterdiskon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5451235037F5AEAF2E9033C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-masterdiskon/Pods-masterdiskon-frameworks.sh",
+				"${PODS_ROOT}/GetSocialExtended/GetSocialExtended/GetSocialSDK.framework",
+				"${PODS_ROOT}/GetSocialExtended/GetSocialExtended/GetSocialUI.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GetSocialSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GetSocialUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-masterdiskon/Pods-masterdiskon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				82195BC5255204B500ECD61B /* File.swift in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = masterdiskon;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA5387240B98FD3DE5FDC16 /* Pods-masterdiskon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = masterdiskon/masterdiskon.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.9.4;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = P4487877P6;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-i18n/ios",
+					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
+					"$(SRCROOT)/../node_modules/@react-native-community/slider/ios",
+					"$(SRCROOT)/../node_modules/@react-native-community/viewpager/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/rn-range-slider/ios",
+					"$(SRCROOT)/../node_modules/rn-range-slider/ios",
+				);
+				INFOPLIST_FILE = masterdiskon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+				);
+				MARKETING_VERSION = 194;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masdis.cust;
+				PRODUCT_NAME = masterdiskon;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "masterdiskon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BABC0A714578FB7CFD599DC8 /* Pods-masterdiskon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = masterdiskon/masterdiskon.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.9.4;
+				DEVELOPMENT_TEAM = P4487877P6;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-i18n/ios",
+					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
+					"$(SRCROOT)/../node_modules/@react-native-community/slider/ios",
+					"$(SRCROOT)/../node_modules/@react-native-community/viewpager/ios",
+					"$(SRCROOT)/../node_modules/react-native-reanimated/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+					"$(SRCROOT)/../node_modules/rn-range-slider/ios",
+					"$(SRCROOT)/../node_modules/rn-range-slider/ios",
+				);
+				INFOPLIST_FILE = masterdiskon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+					"\"$(SRCROOT)/masterdiskon\"",
+				);
+				MARKETING_VERSION = 194;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.masdis.cust;
+				PRODUCT_NAME = masterdiskon;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "masterdiskon-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "masterdiskon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "masterdiskon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

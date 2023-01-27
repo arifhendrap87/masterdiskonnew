@@ -1,0 +1,221 @@
+[
+  {
+    "id_product_category": 1,
+    "icon_product_category": "https://cdn.masterdiskon.com/masterdiskon/icon/original/product/svg/ic-md-pd-hotel.svg",
+    "code_product_category": "HL",
+    "name_product_category": "Hotels",
+    "slug_product_category": "hotels",
+    "status": 1,
+    "pax_required": 0,
+    "tag": [
+      {
+        "id_product_tag": 1,
+        "code_product_category": "RSV",
+        "name_product_tag": "Reservasi",
+        "slug_product_tag": "reservasi"
+      },
+      {
+        "id_product_tag": 2,
+        "code_product_category": "LMD",
+        "name_product_tag": "Last  Minutes Deals",
+        "slug_product_tag": "last-minutes-deals"
+      },
+      {
+        "id_product_tag": 22,
+        "code_product_category": "BNS",
+        "name_product_tag": "Buy Now Stay Later",
+        "slug_product_tag": "buy-now-stay-later"
+      }
+    ]
+  },
+  {
+    "id_product_category": 3,
+    "icon_product_category": "https://cdn.masterdiskon.com/masterdiskon/icon/original/product/svg/ic-md-pd-tour.svg",
+    "code_product_category": "TR",
+    "name_product_category": "Tours",
+    "slug_product_category": "tours",
+    "status": 1,
+    "pax_required": 1,
+    "tag": [
+      {
+        "id_product_tag": 3,
+        "code_product_category": "VTS",
+        "name_product_tag": "Virtual Tours",
+        "slug_product_tag": "virtual-tours"
+      },
+      {
+        "id_product_tag": 9,
+        "code_product_category": "OTP",
+        "name_product_tag": "Open Trips",
+        "slug_product_tag": "open-trips"
+      },
+      {
+        "id_product_tag": 10,
+        "code_product_category": "GPT",
+        "name_product_tag": "Group Tour",
+        "slug_product_tag": "group-tour"
+      },
+      {
+        "id_product_tag": 11,
+        "code_product_category": "PVT",
+        "name_product_tag": "Private Tour",
+        "slug_product_tag": "pricate-tour"
+      }
+    ]
+  },
+  {
+    "id_product_category": 2,
+    "icon_product_category": "https://cdn.masterdiskon.com/masterdiskon/icon/original/product/svg/ic-md-pd-deals.svg",
+    "code_product_category": "TD",
+    "name_product_category": "Travel Deals",
+    "slug_product_category": "travel-deals",
+    "status": 1,
+    "pax_required": 0,
+    "tag": [
+      {
+        "id_product_tag": 4,
+        "code_product_category": "HAC",
+        "name_product_tag": "Hotel Activities",
+        "slug_product_tag": "hotel-activities"
+      },
+      {
+        "id_product_tag": 5,
+        "code_product_category": "ATR",
+        "name_product_tag": "Attraction",
+        "slug_product_tag": "attraction"
+      },
+      {
+        "id_product_tag": 6,
+        "code_product_category": "OTD",
+        "name_product_tag": "Ourdoors",
+        "slug_product_tag": "outdoors"
+      },
+      {
+        "id_product_tag": 7,
+        "code_product_category": "TRP",
+        "name_product_tag": "Transportation",
+        "slug_product_tag": "transportations"
+      },
+      {
+        "id_product_tag": 8,
+        "code_product_category": "WFS",
+        "name_product_tag": "Wifi and Sim Card",
+        "slug_product_tag": "wifi-simcard"
+      }
+    ]
+  },
+  {
+    "id_product_category": 4,
+    "icon_product_category": "https://cdn.masterdiskon.com/masterdiskon/icon/original/product/svg/ic-md-pd-health.svg",
+    "code_product_category": "HB",
+    "name_product_category": "Health & Beauty",
+    "slug_product_category": "health-beauty",
+    "status": 0,
+    "pax_required": 0,
+    "tag": [
+      {
+        "id_product_tag": 12,
+        "code_product_category": "SPM",
+        "name_product_tag": "Spa and Massages",
+        "slug_product_tag": "spa-massages"
+      },
+      {
+        "id_product_tag": 13,
+        "code_product_category": "GYM",
+        "name_product_tag": "Gym",
+        "slug_product_tag": "gym"
+      },
+      {
+        "id_product_tag": 14,
+        "code_product_category": "TRT",
+        "name_product_tag": "Treatment",
+        "slug_product_tag": "treatment"
+      }
+    ]
+  },
+  {
+    "id_product_category": 5,
+    "icon_product_category": "https://cdn.masterdiskon.com/masterdiskon/icon/original/product/svg/ic-md-pd-food.svg",
+    "code_product_category": "FB",
+    "name_product_category": "F&B",
+    "slug_product_category": "fandb",
+    "status": 0,
+    "pax_required": 0,
+    "tag": [
+      {
+        "id_product_tag": 15,
+        "code_product_category": "ASN",
+        "name_product_tag": "Asian",
+        "slug_product_tag": "asian"
+      },
+      {
+        "id_product_tag": 16,
+        "code_product_category": "WST",
+        "name_product_tag": "Western",
+        "slug_product_tag": "western"
+      },
+      {
+        "id_product_tag": 17,
+        "code_product_category": "IDN",
+        "name_product_tag": "Indonesia",
+        "slug_product_tag": "indonesia"
+      },
+      {
+        "id_product_tag": 18,
+        "code_product_category": "AUC",
+        "name_product_tag": "AUCE",
+        "slug_product_tag": "auce"
+      },
+      {
+        "id_product_tag": 19,
+        "code_product_category": "DND",
+        "name_product_tag": "DnD",
+        "slug_product_tag": "dnd"
+      }
+    ]
+  },
+  {
+    "id_product_category": 6,
+    "icon_product_category": "https://cdn.masterdiskon.com/masterdiskon/icon/original/product/svg/icon-apss-07.png",
+    "code_product_category": "VC",
+    "name_product_category": "Gift Vouchers",
+    "slug_product_category": "gift-vouchers",
+    "status": 0,
+    "pax_required": 0,
+    "tag": [
+      {
+        "id_product_tag": 20,
+        "code_product_category": "VCR",
+        "name_product_tag": "Voucher",
+        "slug_product_tag": "voucher"
+      }
+    ]
+  },
+  {
+    "id_product_category": 7,
+    "icon_product_category": "https://cdn.masterdiskon.com/masterdiskon/icon/original/product/svg/ic-md-pd-entertainment.svg",
+    "code_product_category": "EN",
+    "name_product_category": "Entertainment",
+    "slug_product_category": "entertainment",
+    "status": 0,
+    "pax_required": 0,
+    "tag": [
+      {
+        "id_product_tag": 21,
+        "code_product_category": "ENT",
+        "name_product_tag": "Entertainment",
+        "slug_product_tag": "entertainment"
+      }
+    ]
+  },
+  {
+    "id_product_category": 8,
+    "icon_product_category": "https://cdn.masterdiskon.com/masterdiskon/icon/original/product/svg/ic-md-pd-flight.svg",
+    "code_product_category": "FL",
+    "name_product_category": "Flight",
+    "slug_product_category": "flight",
+    "status": 1,
+    "pax_required": 0,
+    "tag": []
+  }
+]

@@ -1,0 +1,160 @@
+apply plugin: "com.android.application"
+apply plugin: 'im.getsocial' // should be applied after com.android.application plugin
+getsocial {
+    appId "y7FO0vr9mL1"
+}
+
+
+import com.android.build.OutputFile
+
+
+project.ext.react = [
+    entryFile: "index.js",
+    enableHermes: true,
+]
+
+apply from: "../../node_modules/react-native/react.gradle"
+
+def enableSeparateBuildPerCPUArchitecture = false
+def jscFlavor = 'org.webkit:android-jsc:+'
+def enableHermes = project.ext.react.get("enableHermes", true);
+def enableProguardInReleaseBuilds = false
+
+android {
+    packagingOptions {
+      pickFirst 'lib/x86/libc++_shared.so'
+      pickFirst 'lib/x86_64/libc++_shared.so'
+      pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+      pickFirst 'lib/arm64-v8a/libc++_shared.so'
+  }
+  
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    dexOptions {
+    javaMaxHeapSize "4g"
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+     lintOptions { 
+      checkReleaseBuilds false 
+    }
+    
+    defaultConfig {
+        applicationId "com.masterdiskon"
+        minSdkVersion rootProject.ext.minSdkVersion //minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 194
+        versionName "1.1.9.4"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('debugkeystore.keystore')
+            storePassword 'masdis123'
+            keyAlias 'debugkeystoremasdis'
+            keyPassword 'masdis123'
+        }
+        release {
+            
+                storeFile file('uploadkeystore.jks')
+                storePassword 'masdis123'
+                keyAlias 'uploadkeystoremasdis'
+                keyPassword 'masdis123'
+           
+            // if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+            //     storeFile file(MYAPP_UPLOAD_STORE_FILE)
+            //     storePassword MYAPP_UPLOAD_STORE_PASSWORD
+            //     keyAlias MYAPP_UPLOAD_KEY_ALIAS
+            //     keyPassword MYAPP_UPLOAD_KEY_PASSWORD
+            // }
+        }
+    }
+
+    splits {
+        abi {
+            reset()
+            enable enableSeparateBuildPerCPUArchitecture
+            universalApk false  // If true, also generate a universal APK
+            include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+        }
+    }
+
+ 
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled enableProguardInReleaseBuilds
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
+            crunchPngs false
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def versionCodes = ["armeabi-v7a": 1, "x86": 2, "arm64-v8a": 3, "x86_64": 4]
+            def abi = output.getFilter(OutputFile.ABI)
+            if (abi != null) {  
+                output.versionCodeOverride =
+                        versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':getsocial-react-native-sdk')
+    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+    implementation project(':react-native-push-notification')
+    // implementation fileTree(dir: "libs", include: ["*.jar"])
+    // implementation "com.android.support:appcompat-v7:23.0.1"
+    // implementation "com.facebook.react:react-native:+"
+    // implementation(project(":react-native-google-signin"))
+    compile project(':react-native-version-check')
+    
+    compile project(':react-native-exit-app')
+    compile 'com.android.support:support-v4:+'
+
+    implementation project(':react-native-fast-image')
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.android.support:appcompat-v7:23.0.1"
+    implementation "com.facebook.react:react-native:+"  
+    
+     implementation 'com.facebook.fresco:fresco:2.0.0'
+    // For animated GIF support
+    implementation 'com.facebook.fresco:animated-gif:2.0.0'
+    // For WebP support, including animated WebP
+    implementation 'com.facebook.fresco:animated-webp:2.0.0'
+    implementation 'com.facebook.fresco:webpsupport:2.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    
+    //implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    if (enableHermes) {
+        def hermesPath = "../../node_modules/hermes-engine/android/";
+        debugImplementation files(hermesPath + "hermes-debug.aar")
+        releaseImplementation files(hermesPath + "hermes-release.aar")
+    } else {
+      implementation jscFlavor
+    }
+}
+
+apply plugin: 'com.google.gms.google-services' // <--- this should be the last line
+googleServices.disableVersionCheck = true
+
+
+task copyDownloadableDepsToLibs(type: Copy) {
+    from configurations.compile
+    into 'libs'
+}
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+//apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+//apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
