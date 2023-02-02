@@ -1126,26 +1126,36 @@ export default class CardCustom extends Component {
             ) : (
               <View />
             )}
-            {propPriceCoret.discountView == true ? discount : <View />}
-
-            {propTypeProduct == "hotel" ?
-
-              <Text
-                body1
-                bold
-                style={[
-                  {
-                    //textDecorationLine: "line-through",
-                    textDecorationStyle: "solid",
-                    color: BaseColor.thirdColor,
-                  },
-                  colorText,
-                ]}
-              >
-                Full Booked
-              </Text>
-              :
+            {
+              propPriceCoret.discountView == true ? 
+              discount 
+              : 
               <View />
+            }
+
+
+            {
+              propTypeProduct == "hotel" ?
+                <View style={{backgroundColor:BaseColor.primaryColor,borderRadius:5}}>
+                <Text
+                  body1
+                  bold
+                  style={[
+                    {
+                      //textDecorationLine: "line-through",
+                      textDecorationStyle: "solid",
+                      color: BaseColor.whiteColor,
+                      paddingVertical:5,
+                      paddingHorizontal:7,
+                    },
+                    colorText,
+                  ]}
+                >
+                  See Availability
+                </Text>
+                </View>
+                :
+                <View />
             }
 
 
@@ -1159,7 +1169,6 @@ export default class CardCustom extends Component {
             )}
           </View>
         );
-
       }
 
       var contentHightLight = <View />;

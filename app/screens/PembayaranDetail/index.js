@@ -167,7 +167,6 @@ export default function PembayaranDetail(props) {
         const lastPathString = lastPath.split("?")[0];
 
         console.log('lastPath', lastPathString);
-        //if (lastPathString == 'home') {
         var paramx = {
             id_order: param.idOrder,
             dataPayment: {},
@@ -175,39 +174,24 @@ export default function PembayaranDetail(props) {
 
 
         if (lastPathString == 'transaction-status' || lastPathString == 'home') {
-
             changeStatusIndodana();
             setTimeout(() => {
-                //navigation.goBack();
                 navigation.navigate("Loading", {
                     redirect: "Pembayaran",
                     param: paramx,
                 });
             }, 500);
         } else if (lastPathString == 'login') {
-            //navigation.goBack();
             navigation.navigate("Loading", {
                 redirect: "Pembayaran",
                 param: paramx,
             });
         } else if (lastPathString == 'download') {
-            //navigation.goBack()
             navigation.navigate("Loading", {
                 redirect: "Pembayaran",
                 param: paramx,
             });
-            // } else if (lastPathString == 'gopay') {
-            //     //navigation.goBack()
-            //     navigation.navigate("Loading", {
-            //         redirect: "Pembayaran",
-            //         param: paramx,
-            //     });
-            // } else if (lastPathString == 'gopay-finish-deeplink') {
-            //     //navigation.goBack()
-            //     navigation.navigate("Loading", {
-            //         redirect: "Pembayaran",
-            //         param: paramx,
-            //     });
+           
 
         } else if (lastPathString == 'details') {
 
@@ -257,7 +241,6 @@ export default function PembayaranDetail(props) {
             javaScriptEnabledAndroid={true}
             automaticallyAdjustContentInsets={false}
             onNavigationStateChange={onNavigationStateChange.bind(this)}
-
             onLoadProgress={({ path }) => {
                 console.log("current_pathonLoadProgress", path);
             }}

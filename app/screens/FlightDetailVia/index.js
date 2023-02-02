@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     marginTop: -10
   },
   descriptionContainer: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     paddingRight: 50
   },
   image: {
@@ -117,6 +117,8 @@ const styles = StyleSheet.create({
 });
 
 
+
+
 export default class FlightDetail extends Component {
   constructor(props) {
     super(props);
@@ -157,6 +159,7 @@ export default class FlightDetail extends Component {
       title: item.departure.name + ' (' + item.departure.code + ')',
       operation: item.name,
       description: 'Keberangkatan :' + item.departure.date + ' ' + item.departure.time,
+      transitTime: item.layover != '' ? 'Waktru transit : '+item.layover : '',
       lineColor: '#009688',
       icon: Images.dot,
       imageUrl: imageUrl,
@@ -180,6 +183,7 @@ export default class FlightDetail extends Component {
       title: item.arrival.name + ' (' + item.arrival.code + ')',
       operation: item.name,
       description: 'Sampai :' + item.arrival.date + ' ' + item.arrival.time,
+      transitTime: item.layover != '' ? 'Waktru transit : '+item.layover : '',
       lineColor: '#009688',
       icon: Images.dot,
       imageUrl: imageUrl,
@@ -226,8 +230,15 @@ export default class FlightDetail extends Component {
         )
     } else {
       desc = (
-        <View style={styles.descriptionContainer}>
+        <View style={[styles.descriptionContainer]}>
           <Text caption1 style={{ marginLeft: 0, color: BaseColor.primaryColor }} bold>{rowData.description}</Text>
+          {
+            rowData.transitTime != '' ?
+
+              <View style={{padding:5, backgroundColor:BaseColor.thirdColor, alignSelf: 'flex-start',borderRadius:5}}><Text caption1 style={{ marginLeft: 0, color: BaseColor.whiteColor }} bold>{rowData.transitTime}</Text></View>
+              :
+              <View />
+          }
         </View>
       )
     }
