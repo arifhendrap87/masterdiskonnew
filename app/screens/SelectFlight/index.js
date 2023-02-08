@@ -149,12 +149,81 @@ export default class SelectFlight extends Component {
         }
     }
 
+
+    rebuild(tags) {
+        var tags_new = [];
+        tags.map(item => {
+            var obj = {};
+            obj['label'] = item.text;
+            obj['code'] = item.id;
+            obj['id'] = item.id;
+            obj['city'] = item.city;
+            obj['country_name'] = item.country_name;
+            obj['id_country'] = item.country_name;
+
+
+            tags_new.push(obj);
+        });
+
+
+        return tags_new;
+    }
+
+
+    searchNew(value) {
+        let config = this.state.configApi;
+        let baseUrl = config.apiBaseUrl;
+        let url = baseUrl + "booking/autocomplete?product=flight&q="+value;
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("Authorization", "Bearer " + config.apiToken);
+
+        var requestOptions = {
+            method: 'GET',
+            headers: myHeaders,
+            redirect: 'follow'
+        };
+
+        this.setState({ loading_spinner: true }, () => {            
+            fetch(url, requestOptions)
+                .then(response => response.json())
+                .then(result => {
+                    console.log('searchairportNew', JSON.stringify(result));
+                    var airport = this.rebuild(result.data);
+                    console.log('airport', JSON.stringify(airport));
+
+                    this.setState({ loading_spinner: false });
+                    this.setState({ flight: airport });
+                    const { navigation } = this.props;
+                    const selected = navigation.getParam("selected");
+
+                    if (selected) {
+                        this.setState({
+                            flight: this.state.flight.map(item => {
+                                return {
+                                    ...item,
+                                    checked: item.id == selected
+                                };
+                            })
+                        });
+                    }
+
+                })
+                .catch(error => {
+                    alert('Kegagalan Respon Server')
+                });
+
+
+
+        });
+
+
+
+
+    }
+
+
     search(value) {
-        // let config=this.state.configApi;
-        //     let baseUrl=config.baseUrl;
-        //     let url=baseUrl+"front/api_new/common/airport_default";
-        //     console.log('configApi',JSON.stringify(config));
-        //     console.log('urlss',url);
 
 
         let config = this.state.configApi;
@@ -165,19 +234,8 @@ export default class SelectFlight extends Component {
 
         this.setState({ loading_spinner: true }, () => {
 
-
-            // let config = JSON.parse(result);
-            // var access_token=config.token;
-            // var path=config.common_airport.dir;
-            // var url=config.baseUrl;
-
-
-
-
-
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
-            // myHeaders.append("Cookie", "ci_session=htllmlmq1kc1inaabihi3lqeqv8jjm91");
 
             var raw = JSON.stringify({ "param": value });
 
@@ -318,7 +376,7 @@ export default class SelectFlight extends Component {
                     <View style={styles.contain}>
                         <TextInput
                             style={BaseStyle.textInput}
-                            onChangeText={text => this.search(text)}
+                            onChangeText={text => this.searchNew(text)}
                             autoCorrect={false}
                             placeholder="Search Airport"
                             placeholderTextColor={BaseColor.grayColor}
@@ -389,7 +447,7 @@ export default class SelectFlight extends Component {
                                                     <View style={styles.left}>
                                                         <Text caption1 semibold>
                                                             {item.label} ({item.id})
-                                            </Text>
+                                                        </Text>
                                                         <Text
                                                             note
                                                             numberOfLines={1}

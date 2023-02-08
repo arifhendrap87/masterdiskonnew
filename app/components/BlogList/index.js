@@ -178,7 +178,7 @@ export default function BlogList(props) {
 
 
         listData.length != 0 ?
-            <View style={{ flex: 1, backgroundColor: BaseColor.whiteColor, marginVertical: 10, paddingBottom: 10 }}>
+            <View style={{ flex: 1, backgroundColor: BaseColor.whiteColor }}>
                 <CardCustomTitle style={{ marginLeft: 20 }} title={'Inspirasi'} desc={'Info maupun tips untuk perjalananmu'} />
 
                 <FlatList

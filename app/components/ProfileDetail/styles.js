@@ -12,7 +12,7 @@ export default StyleSheet.create({
         flex: 8,
         flexDirection: "row",
         justifyContent: "flex-start",
-        alignItems: "center"
+        //alignItems: "center"
     },
     thumb: {
         width: 60,

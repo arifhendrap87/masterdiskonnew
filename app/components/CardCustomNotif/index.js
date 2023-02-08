@@ -113,14 +113,14 @@ export default class CardCustomNotif extends Component {
                                     />
                                 </View>
                                 <View style={styles.right}>
-                                    <Text caption1 bold style={{ color: BaseColor.primaryColor }}>
+                                    <Text body1 bold style={{ color: BaseColor.primaryColor }}>
                                         {txtLeftTitle}
                                     </Text>
 
                                     <View style={{ flexDirection: "row", alignItems: "center", paddingHorizontal: 0 }}>
 
                                         <Text
-                                            caption2
+                                            body2
                                             style={{ marginLeft: 0 }}
                                             numberOfLines={5}
 

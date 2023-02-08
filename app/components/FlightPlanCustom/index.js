@@ -5,6 +5,8 @@ import { Icon, Text } from "@components";
 
 import { BaseColor } from "@config";
 import { StyleSheet } from "react-native";
+import LinearGradient from 'react-native-linear-gradient';
+
 
 const styles = StyleSheet.create({
     contentRow: { flexDirection: "row", marginBottom: 10 },
@@ -78,6 +80,55 @@ export default class FlightPlanCustom extends Component {
                             </Text>
                         </View>
                     </View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={[{}]}
+                //onPress={onPressFrom}
+                >
+                    <LinearGradient
+                        style={{
+                            height: 60,
+                            width: 60,
+                            shadowColor: 'black',
+                            shadowOpacity: 0.2,
+                            shadowRadius: 30,
+                            shadowOffset: {
+                                height: 0,
+                                width: 2,
+                            },
+                            borderRadius: 80 / 2,
+                            elevation: 5,
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: BaseColor.primaryColor,
+                            borderWidth: 5,
+                            borderColor: BaseColor.whiteColor,
+
+
+                        }}
+
+
+                        colors={['#d8145e', '#d8145e', '#d8145e', '#d8145e', '#d8145e', '#d8145e']}
+                        //##f16489ee
+                        //#d8145e
+                        start={{ x: 0, y: 0.5 }}
+                        end={{ x: 1, y: 0.5 }}
+                        locations={[0, 0.2, 0.4, 0.6, 0.8, 1]}
+                    >
+                        <View style={{
+                            flex: 1,
+                            alignItems: "flex-end",
+                            //justifyContent: "center",
+                        }}
+
+                        >
+                            <Icon
+                                name={'airplane-outline'}
+                                size={14}
+                                color={BaseColor.primaryColor}
+                            />
+                        </View>
+                    </LinearGradient>
                 </TouchableOpacity>
 
                 <TouchableOpacity

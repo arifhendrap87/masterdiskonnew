@@ -695,7 +695,14 @@ export default class DetailContact extends Component {
         var formFullName = <View style={{ marginBottom: 10 }}>
             <View style={{ flexDirection: "row" }}>
                 <View style={{ flex: 6, marginRight: 15 }}>
-                    <Text caption2 style={{ marginTop: -20, color: BaseColor.primaryColor }}>
+                    <Text 
+                    caption2 
+                    style={{ 
+                        ////marginTop: -20,
+                        color: BaseColor.primaryColor,
+                        marginBottom:5 
+                    }}
+                    >
                         Firstname
                     </Text>
                     <TouchableOpacity
@@ -720,7 +727,13 @@ export default class DetailContact extends Component {
                                     }}
                                     style={
                                         Platform.OS === 'ios' ?
-                                            { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                            { 
+                                                height: 50, 
+                                                borderWidth: 1, 
+                                                borderColor: BaseColor.greyColor,
+                                                borderRadius:5,
+                                                paddingHorizontal:5
+                                            }
                                             :
                                             {}
                                     }
@@ -732,7 +745,14 @@ export default class DetailContact extends Component {
                 </View>
 
                 <View style={{ flex: 6 }}>
-                    <Text caption2 style={{ marginTop: -20, color: BaseColor.primaryColor }}>
+                    <Text 
+                    caption2 
+                    style={{ 
+                        ////marginTop: -20, 
+                        color: BaseColor.primaryColor,
+                        marginBottom:5 
+                    }}
+                    >
                         Lastname
                     </Text>
                     <TouchableOpacity
@@ -757,7 +777,13 @@ export default class DetailContact extends Component {
                                     }}
                                     style={
                                         Platform.OS === 'ios' ?
-                                            { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                            { 
+                                                height: 50, 
+                                                borderWidth: 1, 
+                                                borderColor: BaseColor.greyColor,
+                                                borderRadius:5,
+                                                paddingHorizontal:5
+                                            }
                                             :
                                             {}
                                     }
@@ -851,7 +877,14 @@ export default class DetailContact extends Component {
 
 
         var formTitle = <View style={{ marginBottom: 10 }}>
-            <Text caption2 style={{ marginTop: -15, color: BaseColor.primaryColor }}>
+            <Text 
+                    caption2 
+                    style={{ 
+                        ////marginTop: -20, 
+                        color: BaseColor.primaryColor,
+                        marginBottom:5 
+                    }}
+            >
                 Title
             </Text>
             <TouchableOpacity
@@ -877,7 +910,13 @@ export default class DetailContact extends Component {
                             value={this.state.title}
                             style={
                                 Platform.OS === 'ios' ?
-                                    { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                    { 
+                                        height: 50, 
+                                        borderWidth: 1, 
+                                        borderColor: BaseColor.greyColor,
+                                        borderRadius:5,
+                                        paddingHorizontal:5
+                                    }
                                     :
                                     {}
                             }
@@ -917,7 +956,7 @@ export default class DetailContact extends Component {
                                 value={this.state.birthday}
                                 style={
                                     Platform.OS === 'ios' ?
-                                        { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                        { height: 50, borderBottomWidth: 1, borderColor: BaseColor.greyColor }
                                         :
                                         {}
                                 }
@@ -971,7 +1010,14 @@ export default class DetailContact extends Component {
         }
 
         var formEmail = <View style={{ marginBottom: 10 }}>
-            <Text caption2 style={{ marginTop: -15, color: BaseColor.primaryColor }}>
+            <Text 
+                caption2 
+                style={{ 
+                    //marginTop: -20, 
+                    color: BaseColor.primaryColor,
+                    marginBottom:5 
+                }}            
+            >
                 Email
             </Text>
             <TouchableOpacity
@@ -996,7 +1042,13 @@ export default class DetailContact extends Component {
                             }}
                             style={
                                 Platform.OS === 'ios' ?
-                                    { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                    { 
+                                        height: 50, 
+                                        borderWidth: 1, 
+                                        borderColor: BaseColor.greyColor,
+                                        borderRadius:5,
+                                        paddingHorizontal:5
+                                    }
                                     :
                                     {}
                             }
@@ -1017,7 +1069,14 @@ export default class DetailContact extends Component {
         var formPhone = <View style={{ marginBottom: 10 }}>
             <View style={{ flexDirection: "row" }}>
                 <View style={{ flex: 4, marginRight: 15 }}>
-                    <Text caption2 style={{ marginTop: -15, color: BaseColor.primaryColor }}>
+                    <Text 
+                    caption2 
+                    style={{ 
+                        ////marginTop: -20, 
+                        color: BaseColor.primaryColor,
+                        marginBottom:5 
+                    }}
+                    >
                         Phone Code
                     </Text>
                     <TouchableOpacity
@@ -1048,7 +1107,13 @@ export default class DetailContact extends Component {
                                     }}
                                     style={
                                         Platform.OS === 'ios' ?
-                                            { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                            { 
+                                                height: 50, 
+                                                borderWidth: 1, 
+                                                borderColor: BaseColor.greyColor,
+                                                borderRadius:5,
+                                                paddingHorizontal:5
+                                            }
                                             :
                                             {}
                                     }
@@ -1060,7 +1125,14 @@ export default class DetailContact extends Component {
                 </View>
 
                 <View style={{ flex: 8 }}>
-                    <Text caption2 style={{ marginTop: -15, color: BaseColor.primaryColor }}>
+                    <Text 
+                        caption2 
+                        style={{ 
+                            //marginTop: -20, 
+                            color: BaseColor.primaryColor,
+                            marginBottom:5 
+                        }}                    
+                    >
                         Phone Number
                     </Text>
                     <TouchableOpacity
@@ -1085,7 +1157,13 @@ export default class DetailContact extends Component {
                                     }}
                                     style={
                                         Platform.OS === 'ios' ?
-                                            { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                            { 
+                                                height: 50, 
+                                                borderWidth: 1, 
+                                                borderColor: BaseColor.greyColor,
+                                                borderRadius:5,
+                                                paddingHorizontal:5
+                                            }
                                             :
                                             {}
                                     }
@@ -1103,7 +1181,13 @@ export default class DetailContact extends Component {
 
 
         var formNationality = <View style={{ marginBottom: 10 }}>
-            <Text caption2 style={{ marginTop: -15, color: BaseColor.primaryColor }}>
+            <Text 
+            caption2 
+            style={{ 
+                ////marginTop: -20, 
+                color: BaseColor.primaryColor,
+                marginBottom:5 
+            }}            >
                 Nationality
             </Text>
             <TouchableOpacity
@@ -1130,7 +1214,13 @@ export default class DetailContact extends Component {
                             value={this.state.nationality}
                             style={
                                 Platform.OS === 'ios' ?
-                                    { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                    { 
+                                        height: 50, 
+                                        borderWidth: 1, 
+                                        borderColor: BaseColor.greyColor,
+                                        borderRadius:5,
+                                        paddingHorizontal:5
+                                    }
                                     :
                                     {}
                             }
@@ -1169,7 +1259,7 @@ export default class DetailContact extends Component {
                             }}
                             style={
                                 Platform.OS === 'ios' ?
-                                    { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                    { height: 50, borderBottomWidth: 1, borderColor: BaseColor.greyColor }
                                     :
                                     {}
                             }
@@ -1207,7 +1297,7 @@ export default class DetailContact extends Component {
                             value={this.state.passport_expire}
                             style={
                                 Platform.OS === 'ios' ?
-                                    { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                    { height: 50, borderBottomWidth: 1, borderColor: BaseColor.greyColor }
                                     :
                                     {}
                             }
@@ -1292,7 +1382,7 @@ export default class DetailContact extends Component {
                             value={this.state.passport_country}
                             style={
                                 Platform.OS === 'ios' ?
-                                    { height: 50, borderBottomWidth: 1, borderColor: 'black' }
+                                    { height: 50, borderBottomWidth: 1, borderColor: BaseColor.greyColor }
                                     :
                                     {}
                             }

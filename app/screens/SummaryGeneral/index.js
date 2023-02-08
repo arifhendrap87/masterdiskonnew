@@ -85,12 +85,11 @@ const styles = StyleSheet.create({
 
   contentProfile: {
     flexDirection: "row",
-    backgroundColor: BaseColor.fieldColor,
+    //backgroundColor: BaseColor.fieldColor,
     marginBottom: 5,
-
     borderWidth: 1,
     borderRadius: 10,
-    borderColor: BaseColor.fieldColor,
+    borderColor: BaseColor.greyColor,
     padding: 5,
   },
   searchIcon: {
@@ -299,6 +298,59 @@ export default function SummaryGeneral(props) {
   });
   const [typeFlight, setTypeFlight] = useState("");
   const [arr_old] = useState(convertOld(param));
+  const [errorValidationCustomer, setErrorValidationCustomer] = useState([
+    {
+      'key': 1,
+      'statusError': false
+    },
+    {
+      'key': 2,
+      'statusError': false
+    },
+    {
+      'key': 3,
+      'statusError': false
+    },
+    {
+      'key': 4,
+      'statusError': false
+    },
+    {
+      'key': 5,
+      'statusError': false
+    },
+    {
+      'key': 1,
+      'statusError': false
+    },
+  ]);
+  const [errorValidationParticipant, setErrorValidationParticipant] = useState([
+    {
+      'key': 1,
+      'statusError': false
+    },
+    {
+      'key': 2,
+      'statusError': false
+    },
+    {
+      'key': 3,
+      'statusError': false
+    },
+    {
+      'key': 4,
+      'statusError': false
+    },
+    {
+      'key': 5,
+      'statusError': false
+    },
+    {
+      'key': 1,
+      'statusError': false
+    },
+  ]);
+
 
   const [ssr, setSsr] = useState(ssrx);
   const [extraBaggage, setExtraBaggage] = useState(extraBaggagex);
@@ -472,7 +524,7 @@ export default function SummaryGeneral(props) {
     var contentTambahanBagasi = <View />;
     if (extra.baggage.length != 0 || extraBaggage.length != 0) {
       contentTambahanBagasi = (
-        <View style={styles.contentProfile}>
+        <View style={[styles.contentProfile]}>
           <ProfileDetail
             textFirst={"Tambahan Bagasi"}
             textSecond={filterValue(ssr, "num", index, "-baggage").desc}
@@ -686,6 +738,11 @@ export default function SummaryGeneral(props) {
     }
     AsyncStorage.setItem("setDataCustomer", JSON.stringify(customer));
     setListdataCustomer(customer);
+    console.log('lisdataCustomer', JSON.stringify(customer));
+
+
+
+
 
 
     if (typeFlight == "domestic" || typeProduct == "trip") {
@@ -748,6 +805,9 @@ export default function SummaryGeneral(props) {
     }
     AsyncStorage.setItem("setDataParticipant", JSON.stringify(participant));
     setListdataParticipant(participant);
+
+    validation(customer, participant);
+
     setTimeout(() => {
       console.log("listdata_participant", JSON.stringify(listdataParticipant));
     }, 20);
@@ -1019,7 +1079,7 @@ export default function SummaryGeneral(props) {
       this.dropdown.alertWithType(
         "info",
         "InfoonSubmit",
-        "Data traveller / penumpang tidak boleh double"
+        "Data tamu / penumpang tidak boleh double"
       );
     } else if (check.length > 0) {
       this.dropdown.alertWithType(
@@ -1586,17 +1646,15 @@ export default function SummaryGeneral(props) {
       .then((response) => response.json())
       .then((result) => {
         console.log("saveParticipantresult", JSON.stringify(result));
-        setTimeout(() => {
-          validation();
-        }, 50);
+
       })
       .catch((error) => {
         console.log(JSON.stringify(error));
-        this.dropdown.alertWithType(
-          "info",
-          "InfosaveParticipant",
-          JSON.stringify(error)
-        );
+        // this.dropdown.alertWithType(
+        //   "info",
+        //   "InfosaveParticipant",
+        //   JSON.stringify(error)
+        // );
       });
   }
 
@@ -1834,6 +1892,9 @@ export default function SummaryGeneral(props) {
                 setListdataParticipant(newProjects);
                 console.log("newProjectsxxxyy", JSON.stringify(newProjects));
 
+                setTimeout(() => {
+                  validation(listdataCustomer, newProjects);
+                }, 500);
 
                 saveParticipant(
                   id,
@@ -1896,6 +1957,10 @@ export default function SummaryGeneral(props) {
 
 
 
+            setTimeout(() => {
+              validation(listdataCustomer, newProjects);
+            }, 500);
+
           }
         }
       });
@@ -1930,6 +1995,10 @@ export default function SummaryGeneral(props) {
 
           AsyncStorage.setItem("setDataCustomer", JSON.stringify(newProjects));
           setListdataCustomer(newProjects);
+
+          setTimeout(() => {
+            validation(newProjects, listdataParticipant);
+          }, 500);
 
           if (login == true) {
 
@@ -1989,20 +2058,18 @@ export default function SummaryGeneral(props) {
         },
       });
       setErrorFormCustomer(false);
-      setTimeout(() => {
-        validation();
-      }, 50);
+
     }
   }
 
-  function validaton_participant() {
+  function validaton_participant(listdataParticipant) {
     var hasil = false;
     const products = listdataParticipant;
-    console.log("validaton_participant", JSON.stringify(products));
+    console.log("productsss", JSON.stringify(products));
 
     const filters = {
       title: (title) => title == "",
-      fullname: (fullname) => fullname == "",
+      //fullname: (fullname) => fullname == "",
     };
 
     const filtered = filterArray(products, filters);
@@ -2035,11 +2102,11 @@ export default function SummaryGeneral(props) {
   toggleSwitch = (value) => {
     setReminders(value);
     var customer = listdataCustomer[0];
-    //console.log('customer', JSON.stringify(customer));
+    console.log('customertoggleSwitch', JSON.stringify(customer));
+    console.log('valuetoggleSwitch', value);
 
     if (value == true) {
-      //setLoading(true);
-
+      console.log('value', value);
       var key = 1;
       var fullname = customer.fullname;
       var firstname = customer.firstname;
@@ -2058,25 +2125,17 @@ export default function SummaryGeneral(props) {
       var type = "guest";
       var old = "adult";
 
-      var paraVal = {
-        firstname: firstname,
-        lastname: lastname,
-        title: title,
-        email: email,
-        phone: phone,
-        nationality: nationality,
-        nationality_phone_code: nationality_phone_code,
-      };
 
       if (
         firstname == "" ||
         lastname == "" ||
-        title == null ||
-        email == "" ||
-        phone == "" ||
-        nationality == null ||
-        nationality_phone_code == null
+        title == ""
+        // email == "" ||
+        // phone == "" ||
+        // nationality == null ||
+        // nationality_phone_code == null
       ) {
+        console.log("valuextoglefalse");
         setStyleFormCustomer({
           flexDirection: "row",
           backgroundColor: BaseColor.fieldColor,
@@ -2087,10 +2146,13 @@ export default function SummaryGeneral(props) {
           padding: 5,
         });
         setErrorFormCustomer(true);
+        setTimeout(() => {
+          validation(listdataCustomer, listdataParticipant);
+        }, 500);
+
         setReminders(false);
       } else {
         console.log("valuextogletrue");
-        //alert('asd');
         updateParticipant(
           key,
           fullname,
@@ -2113,6 +2175,7 @@ export default function SummaryGeneral(props) {
         );
       }
     } else {
+      console.log('value', value);
       var key = 1;
       var fullname = "";
       var firstname = "";
@@ -2154,21 +2217,67 @@ export default function SummaryGeneral(props) {
     }
   };
 
-  function validation() {
-    var jml_empty_participant = validaton_participant();
-    var jml_empty_customer = validaton_customer();
-    console.log("jml_empty_participant", jml_empty_participant);
-    console.log("jml_empty_customer", jml_empty_customer);
-    setLoading(false);
-    if (jml_empty_participant == 0 && jml_empty_customer == 0) {
+  function checkData(data) {
+    var error = false;
+    if (data.title != '' || data.firstname != '' || data.lastname != '') {
+      error = false;
+    } else {
+      error = true;
+    }
+    return error;
+  }
+
+  function checkIfError(myArray, id) {
+    var item = myArray.find(item => item.key == id);
+    return item;
+  }
+
+  function validation(customer, participant) {
+    var errCustomer = [];
+    customer.map((item) => {
+      var obj = {};
+      obj['key'] = item.key;
+      obj['statusError'] = checkData(item);
+      errCustomer.push(obj);
+    });
+    console.log('errCustomer', JSON.stringify(errCustomer));
+    setErrorValidationCustomer(errCustomer);
+
+    errCustomerCheck = errCustomer.filter(custCheck => custCheck.statusError == true);
+    var errCustomerCheckCount = errCustomerCheck.length;
+    console.log('errCustomerCheckCount', JSON.stringify(errCustomerCheckCount));
+
+
+    var errParticipant = [];
+    participant.map((item) => {
+      var obj = {};
+      obj['key'] = item.key;
+      obj['statusError'] = checkData(item);
+      errParticipant.push(obj);
+    });
+    console.log('errParticipant', JSON.stringify(errParticipant));
+    setErrorValidationParticipant(errParticipant);
+
+
+    errParticipantCheck = errParticipant.filter(partCheck => partCheck.statusError == true);
+    var errParticipantCheckCount = errParticipantCheck.length;
+    console.log('errParticipantCheckCount', JSON.stringify(errParticipantCheckCount));
+
+
+    if (errCustomerCheckCount != 0 || errParticipantCheckCount != 0) {
+      console.log('statusdisable', false);
+
+
+      setColorButton(BaseColor.greyColor);
+      setColorButtonText(BaseColor.whiteColor);
+      setDisabledButton(true);
+    } else {
+      console.log('statusdisable', true);
       setColorButton(BaseColor.secondColor);
       setColorButtonText(BaseColor.primaryColor);
       setDisabledButton(false);
-    } else {
-      setColorButtonText(BaseColor.greyColor);
-      setColorButtonText(BaseColor.whiteColor);
-      setDisabledButton(true);
     }
+
   }
 
   function useCoupon(item) {
@@ -2496,124 +2605,192 @@ export default function SummaryGeneral(props) {
 
   const contentFormCustomer = listdataCustomer.map((item, index) => {
     return (
-      <View style={styles.contentProfile}>
-        <ProfileDetail
-          textFirst={item.label}
-          textSecond={item.fullname}
-          icon={"create-outline"}
-          onPress={() =>
-            navigation.navigate("DetailContact", {
-              key: item.key,
-              label: item.label,
-              fullname: item.fullname,
-              firstname: item.firstname,
-              lastname: item.lastname,
-              birthday: item.birthday,
-              nationality: item.nationality,
-              passport_number: item.passport_number,
-              passport_country: item.passport_country,
-              passport_expire: item.passport_expire,
-              phone: item.phone,
-              title: item.title,
-              email: item.email,
+      <View style={{ flexDirection: 'column' }}>
+        <View style={{ flexDirection: 'row' }}>
+          <View style={[styles.contentProfile,
+          {
+            flex: 6,
+            borderColor: checkIfError(errorValidationCustomer, item.key).statusError == true ? BaseColor.thirdColor : BaseColor.greyColor,
 
-              nationality_id: item.nationality_id,
-              nationality_phone_code: item.nationality_phone_code,
 
-              passport_country_id: item.passport_country_id,
+          }]}>
+            <ProfileDetail
+              textFirst={item.label}
+              textSecond={item.fullname}
+              icon={"create-outline"}
+              onPress={() =>
+                navigation.navigate("DetailContact", {
+                  key: item.key,
+                  label: item.label,
+                  fullname: item.fullname,
+                  firstname: item.firstname,
+                  lastname: item.lastname,
+                  birthday: item.birthday,
+                  nationality: item.nationality,
+                  passport_number: item.passport_number,
+                  passport_country: item.passport_country,
+                  passport_expire: item.passport_expire,
+                  phone: item.phone,
+                  title: item.title,
+                  email: item.email,
 
-              updateParticipant: updateParticipant,
-              type: "customer",
-              old: item.old,
-              typeProduct: param.type,
-            })
+                  nationality_id: item.nationality_id,
+                  nationality_phone_code: item.nationality_phone_code,
+
+                  passport_country_id: item.passport_country_id,
+
+                  updateParticipant: updateParticipant,
+                  type: "customer",
+                  old: item.old,
+                  typeProduct: param.type,
+                })
+              }
+              viewImage={false}
+              style={{ flex: 10, marginRight: 10 }}
+            />
+          </View>
+          {
+            login == true ?
+
+              <View style={[styles.contentProfile,
+              {
+                flex: 1,
+                backgroundColor: BaseColor.primaryColor,
+                borderColor: BaseColor.primaryColor,
+                borderWidth: 1
+
+              }]}
+
+              >
+                <TouchableOpacity
+                  style={[styles.searchIcon]}
+                  onPress={() => {
+                    navigation.navigate("ProfileSmart", {
+                      sourcePage: "summary",
+                      item: item,
+                      old: item.old,
+                      type: "customer",
+                      updateParticipant: updateParticipant,
+                    });
+                  }}
+                >
+                  <Icon
+                    name="search"
+                    size={18}
+                    color={BaseColor.whiteColor}
+                    style={{ textAlign: "center" }}
+                  />
+                </TouchableOpacity>
+              </View>
+              :
+              <View />
           }
-          viewImage={false}
-          style={{ flex: 10, marginRight: 10 }}
-        />
-        <TouchableOpacity
-          style={styles.searchIcon}
-          onPress={() => {
-            navigation.navigate("ProfileSmart", {
-              sourcePage: "summary",
-              item: item,
-              old: item.old,
-              type: "customer",
-              updateParticipant: updateParticipant,
-            });
-          }}
-        >
-          <Icon
-            name="search"
-            size={18}
-            color={BaseColor.primaryColor}
-            style={{ textAlign: "center" }}
-          />
-        </TouchableOpacity>
+        </View>
+        {
+          checkIfError(errorValidationCustomer, item.key).statusError == true ?
+            <Text style={{ color: BaseColor.thirdColor }}>Pastikan data terisi semua</Text>
+            :
+            <View />
+        }
       </View>
     );
   });
   const contentformParticipant = listdataParticipant.map((item, index) => {
     return (
       <View style={{ marginBottom: 20 }}>
-        <View style={styles.contentProfile}>
-          <ProfileDetail
-            textFirst={item.label}
-            textSecond={item.fullname}
-            icon={"create-outline"}
-            onPress={() => {
-              navigation.navigate("DetailContact", {
-                key: item.key,
-                label: item.label,
-                fullname: item.fullname,
-                firstname: item.firstname,
-                lastname: item.lastname,
-                birthday: item.birthday,
-                nationality: item.nationality,
-                passport_number: item.passport_number,
-                passport_country: item.passport_country,
-                passport_expire: item.passport_expire,
-                phone: item.phone,
-                title: item.title,
-                email: item.email,
+        <View style={{ flexDirection: 'column' }}>
+          <View style={{ flexDirection: 'row' }}>
 
-                nationality_id: item.nationality_id,
-                nationality_phone_code: item.nationality_phone_code,
+            <View style={[styles.contentProfile, {
+              flex: 6,
+              borderColor: checkIfError(errorValidationParticipant, item.key).statusError == true ? BaseColor.thirdColor : BaseColor.greyColor,
 
-                passport_country_id: item.passport_country_id,
 
-                updateParticipant: updateParticipant,
-                type: "guest",
-                old: item.old,
-                typeFlight: typeFlight,
-                typeProduct: param.type,
-                dataCount: dataCount,
-                dataPrice: paramAll.dataPrice,
-              });
-            }}
-            viewImage={false}
-            style={{ flex: 10, marginRight: 10 }}
-          />
-          <TouchableOpacity
-            style={styles.searchIcon}
-            onPress={() => {
-              navigation.navigate("ProfileSmart", {
-                sourcePage: "summary",
-                item: item,
-                old: item.old,
-                type: "guest",
-                updateParticipant: updateParticipant,
-                listdataParticipant: listdataParticipant,
-              });
-            }}
-          >
-            <Icon
-              name="search"
-              size={18}
-              color={BaseColor.primaryColor}
-              style={{ textAlign: "center" }}
-            />
-          </TouchableOpacity>
+            }]}>
+              <ProfileDetail
+                textFirst={item.label}
+                textSecond={item.fullname}
+                icon={"create-outline"}
+                onPress={() => {
+                  navigation.navigate("DetailContact", {
+                    key: item.key,
+                    label: item.label,
+                    fullname: item.fullname,
+                    firstname: item.firstname,
+                    lastname: item.lastname,
+                    birthday: item.birthday,
+                    nationality: item.nationality,
+                    passport_number: item.passport_number,
+                    passport_country: item.passport_country,
+                    passport_expire: item.passport_expire,
+                    phone: item.phone,
+                    title: item.title,
+                    email: item.email,
+
+                    nationality_id: item.nationality_id,
+                    nationality_phone_code: item.nationality_phone_code,
+
+                    passport_country_id: item.passport_country_id,
+
+                    updateParticipant: updateParticipant,
+                    type: "guest",
+                    old: item.old,
+                    typeFlight: typeFlight,
+                    typeProduct: param.type,
+                    dataCount: dataCount,
+                    dataPrice: paramAll.dataPrice,
+                  });
+                }}
+                viewImage={false}
+                style={{ flex: 10, marginRight: 10 }}
+              />
+
+            </View>
+            {
+              login == true ?
+
+                <View style={[styles.contentProfile,
+                {
+                  flex: 1,
+                  backgroundColor: BaseColor.primaryColor,
+                  borderColor: BaseColor.primaryColor,
+                  borderWidth: 1
+
+                }]}
+
+                >
+                  <TouchableOpacity
+                    style={styles.searchIcon}
+                    onPress={() => {
+                      navigation.navigate("ProfileSmart", {
+                        sourcePage: "summary",
+                        item: item,
+                        old: item.old,
+                        type: "guest",
+                        updateParticipant: updateParticipant,
+                        listdataParticipant: listdataParticipant,
+                      });
+                    }}
+                  >
+                    <Icon
+                      name="search"
+                      size={18}
+                      color={BaseColor.whiteColor}
+                      style={{ textAlign: "center" }}
+                    />
+                  </TouchableOpacity>
+
+                </View>
+                :
+                <View />
+            }
+          </View>
+          {
+            checkIfError(errorValidationParticipant, item.key).statusError == true ?
+              <Text style={{ color: BaseColor.thirdColor }}>Pastikan data terisi semua</Text>
+              :
+              <View />
+          }
         </View>
         {param.type == "flight" ? (
           <View>
@@ -3397,26 +3574,7 @@ export default function SummaryGeneral(props) {
             Detail Pemesan
           </Text>
           {contentFormCustomer}
-          {errorFormCustomer ? (
-            <View style={{ flexDirection: "row" }}>
-              <View
-                style={{
-                  flexDirection: "row",
-                  flex: 10,
-                  justifyContent: "flex-start",
-                  alignItems: "center",
-                }}
-              >
-                <View>
-                  <Text footnote numberOfLines={1} style={{ color: "red" }}>
-                    Pastikan Detail Pemesan terisi semua, harap cek kembali
-                  </Text>
-                </View>
-              </View>
-            </View>
-          ) : (
-            <View />
-          )}
+
         </View>
 
         {/* <View style={styles.line} /> */}
@@ -3444,16 +3602,39 @@ export default function SummaryGeneral(props) {
           <Text subhead bold>
             {labeldetail}
           </Text>
-          <View style={styles.profileItem}>
-            <Text footnote>Sama dengan pemesan</Text>
-            <Switch
-              name="angle-right"
-              size={14}
-              onValueChange={this.toggleSwitch}
-              value={reminders}
-            />
+          <View style={[styles.profileItem], { flexDirection: 'column', marginBottom: 10 }}>
+            <View style={[styles.profileItem]}>
+              <Text footnote>Sama dengan pemesan</Text>
+              <Switch
+                name="angle-right"
+                size={14}
+                onValueChange={this.toggleSwitch}
+                value={reminders}
+              />
+            </View>
+            {errorFormCustomer ? (
+              <View style={{ flexDirection: "row" }}>
+                <View
+                  style={{
+                    flexDirection: "row",
+                    flex: 10,
+                    justifyContent: "flex-start",
+                    alignItems: "center",
+                  }}
+                >
+                  <View>
+                    <Text style={{ color: BaseColor.thirdColor }}>
+                      Pastikan detail pemesan terisi semua, apabila ingin mengcopy data pemesan.
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            ) : (
+              <View />
+            )}
           </View>
           {contentformParticipant}
+
         </View>
 
         {

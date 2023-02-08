@@ -9,7 +9,8 @@ import {
   AsyncStorage,
   FlatList,
   ActivityIndicator,
-  TextInput
+  TextInput,
+  Linking
 } from "react-native";
 import { BaseStyle, BaseColor, Images } from "@config";
 import {
@@ -188,9 +189,14 @@ export default class PreviewBooking extends Component {
     return d.getDate() + " " + months[d.getMonth()] + " " + d.getFullYear();
   }
 
+   removeChar(str, startIndex, count) {
+    return str.substr(0, startIndex) + str.substr(startIndex + count);
+  }
+
+
   timeline_from(item) {
     var data = {
-      time: item.departure.time,
+      time: this.removeChar(item.departure.time,5,3),
       title: item.departure.code + " - " + item.departure.name,
       operation: "Dioperasikan oleh " + item.name,
       description:
@@ -208,7 +214,7 @@ export default class PreviewBooking extends Component {
 
   timeline_to(item) {
     var data = {
-      time: item.arrival.time,
+      time: this.removeChar(item.arrival.time,5,3),
       title: item.arrival.code + " - " + item.arrival.name,
       operation: "",
       description: "Arrive at :" + item.arrival.date + " " + item.arrival.time,
@@ -525,6 +531,7 @@ export default class PreviewBooking extends Component {
       if (
         this.props.dataDetail?.status?.id == 5 ||
         this.props.dataDetail?.status?.id == 7 ||
+        this.props.dataDetail?.status?.id == 9 ||
         this.props.dataDetail?.status?.id == 11 ||
         this.props.dataDetail?.status?.id == 13 ||
         this.props.dataDetail?.status?.id == 15 ||
@@ -541,13 +548,7 @@ export default class PreviewBooking extends Component {
       } else {
         countDown = (
           <View
-            // style={{
-            //   borderWidth: 1,
-            //   borderColor: BaseColor.textSecondaryColor,
-            //   borderRadius: 10,
-            //   marginBottom: 10,
-            //   padding: 10,
-            // }}
+
 
             style={[
               styles.blockView,
@@ -646,9 +647,10 @@ export default class PreviewBooking extends Component {
           //icon={"ticket"}
           onPress={() => {
             console.log('bookingDoc', this.props.dataDetail?.doc?.eticket);
-            this.props.navigation.navigate("Eticket", {
-              bookingDoc: this.props.dataDetail?.doc?.eticket,
-            });
+            // this.props.navigation.navigate("Eticket", {
+            //   bookingDoc: this.props.dataDetail?.doc?.eticket,
+            // });
+            Linking.openURL(this.props.dataDetail?.doc?.eticket);
           }}
         />)
     }
@@ -787,7 +789,7 @@ export default class PreviewBooking extends Component {
         <View style={{ flexDirection: 'row' }}>
 
 
-          <TouchableOpacity
+          {/* <TouchableOpacity
             onPress={() => {
               this.props.setModalVisibleReview(true);
 
@@ -807,7 +809,7 @@ export default class PreviewBooking extends Component {
                 </Text>
               </Button>
             </View>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
 
         </View>
       );
@@ -1853,7 +1855,7 @@ export default class PreviewBooking extends Component {
     // console.log('product', product);
 
 
-    // console.log('guest', JSON.stringify(dataDetail.guest));
+    console.log('datadetail', JSON.stringify(dataDetail));
     var paxs = [];
     var info = <View />;
 
@@ -1938,29 +1940,9 @@ export default class PreviewBooking extends Component {
           }}
         >
           <View>
-            <Text body2 bold>
-              {" "}
-              Rp {priceSplitter(dataDetail.price.subtotal)}
-
+            <Text subhead bold style={{ marginBottom: 10 }}>
+              Detail Pembayaran
             </Text>
-          </View>
-          <View>
-            <TouchableOpacity
-              onPress={() => {
-                if (this.state.minimizePrice == true) {
-                  this.setState({ minimizePrice: false });
-                } else {
-                  this.setState({ minimizePrice: true });
-                }
-              }}
-            >
-              <Icon
-                name="chevron-down-outline"
-                size={20}
-                color={BaseColor.primaryColor}
-                style={{ marginTop: -2 }}
-              />
-            </TouchableOpacity>
           </View>
         </View>
         {/* {dataDetail.payments.history.length == 0 ? (
@@ -2647,7 +2629,10 @@ export default class PreviewBooking extends Component {
         styles.blockView,
         {
           marginTop: 10,
-          backgroundColor: "white",
+          //borderWidth:2,
+          //borderColor:this.converColor(dataDetail?.status?.color),
+          //backgroundColor: this.converColor(dataDetail?.status?.color),
+          backgroundColor: BaseColor.whiteColor,
           borderRadius: 10,
           marginBottom: 5,
           shadowColor: "#000",
@@ -2663,31 +2648,28 @@ export default class PreviewBooking extends Component {
       ]}
     >
       <View style={{ flexDirection: 'row' }}>
-        <View style={{ flex: 3 }}>
-          <Text body2 bold style={{ marginBottom: 5 }}>
+        <View style={{ flex: 1 }}>
+          <Text body2 bold style={{ marginBottom: 5, alignSelf: 'center' }}>
             Status Pesanan
           </Text>
 
           <View style={{}}>
-            <View style={{
-              backgroundColor: this.converColor(dataDetail?.status?.color),
-              padding: 5,
-              borderRadius: 5,
-              width: 100,
-              alignItems: 'center'
-            }}>
+            <View style={{}}>
               <Text
-                whiteColor
-                footnote
+                body1 bold style={{ marginBottom: 5, alignSelf: 'center', color: this.converColor(dataDetail?.status?.color) }}
               >
                 {dataDetail?.status?.name}
               </Text>
             </View>
 
-            <Text footnote>{dataDetail?.status?.description}</Text>
+            <Text
+              footnote
+              style={{ marginBottom: 5, alignSelf: 'center', color: this.converColor(dataDetail?.status?.color) }}
+
+            >{dataDetail?.status?.description}</Text>
           </View>
         </View>
-        <View style={{ flex: 2 }}>
+        {/* <View style={{ flex: 2 }}>
           <View style={{}}>
             <Text body2 bold style={{ marginBottom: 5 }}>
               Rincian Pembayaran
@@ -2720,7 +2702,7 @@ export default class PreviewBooking extends Component {
               </TouchableOpacity>
             </View>
           </View>
-        </View>
+        </View> */}
       </View>
       <Modal
         isVisible={this.state.modalVisibleRinci}
@@ -2738,9 +2720,6 @@ export default class PreviewBooking extends Component {
         <View style={[styles.contentFilterBottom, { paddingBottom: 50 }]}>
           <View style={styles.contentSwipeDown}>
             <View style={styles.lineSwipeDown} />
-
-
-
             <View
               style={{
                 flexDirection: "row",
@@ -2919,13 +2898,13 @@ export default class PreviewBooking extends Component {
           {
             this.content_bank()
           }
+          {contentPayment}
+
           {contentPaymentSelect}
           {this.contentEvoucher()}
           {contentProduct}
           {contentContact}
 
-          {/* {scedules} */}
-          {/* {optionSelect} */}
 
           {dataDetail?.guest
             ?
@@ -2959,7 +2938,7 @@ export default class PreviewBooking extends Component {
           }
           {info}
 
-          {/* {contentPayment} */}
+          {contentPayment}
 
         </View>
 

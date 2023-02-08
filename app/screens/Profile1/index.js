@@ -755,7 +755,7 @@ export default function Profile1(props) {
               }}
             />
 
-            <CardCustomProfile
+            {/* <CardCustomProfile
               title={"Review"}
               subtitle={
                 userSession.nationality_phone_code + "-" + userSession.phone
@@ -777,7 +777,7 @@ export default function Profile1(props) {
                   sourcePage: "profile",
                 });
               }}
-            />
+            /> */}
 
             <CardCustomProfile
               title={"Bantuan"}

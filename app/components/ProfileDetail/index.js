@@ -48,23 +48,13 @@ export default class ProfileDetail extends Component {
                         <Text caption1 semibold numberOfLines={1}>
                             {textSecond}
                         </Text>
-                        {/* <Text
-                            body2
-                            style={{
-                                marginTop: 3,
-                                paddingRight: 10
-                            }}
-                            numberOfLines={1}
-                        >
-                            {textThird}
-                        </Text> */}
-
+                        
                     </View>
                 </View>
                 <View style={[styles.contentRight, styleRight]}>
                     <Icon
                         name={icon}
-                        size={14}
+                        size={20}
                         color={BaseColor.primaryColor}
                     />
                 </View>

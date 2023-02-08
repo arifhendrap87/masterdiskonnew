@@ -16,6 +16,7 @@ import {
 } from "@components";
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+
 import { BaseStyle, BaseColor, Images } from "@config";
 import * as Utils from "@utils";
 import FormSearch from "../../components/FormSearch";
@@ -194,7 +195,7 @@ export default function Home(props) {
                                 { useNativeDriver: false }
                             )}
                         >
-                            <View style={{ marginTop: 0, marginBottom: 200 }}>
+                            <View style={{ marginTop: 0, marginBottom: 80 }}>
                                 <Promo navigation={navigation} />
                                 <ListProductMenuHorizontalRounded navigation={navigation} />
                                 {/* <TravelBuddyMenu navigation={navigation} /> */}

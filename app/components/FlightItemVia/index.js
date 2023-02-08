@@ -18,6 +18,22 @@ import Modal from "react-native-modal";
 
 export default class itemDataDataVia extends Component {
 
+    convertGambar(code,image){
+        const str = code;
+        const firstTwoChars = str.slice(0, 2);
+        var imageMaskapai=image;
+        if(firstTwoChars=='8B'){
+            imageMaskapai='https://cdn.masterdiskon.com/masterdiskon/product/flight/airline/transnusa.jpg';
+        }else if(firstTwoChars=='IU'){
+            imageMaskapai='https://cdn.masterdiskon.com/masterdiskon/product/flight/airline/superairjet.jpg';
+        }else if(firstTwoChars=='IP'){
+            imageMaskapai='https://cdn.masterdiskon.com/masterdiskon/product/flight/airline/pelitaair.jpg';
+        }
+
+
+        return imageMaskapai;
+    }
+
     render() {
         const {
             style,
@@ -75,7 +91,7 @@ export default class itemDataDataVia extends Component {
                                 :
                                 // <View />
                                 <View>
-                                    <TouchableOpacity  style={{ flexDirection: 'column' }}>
+                                    <View  style={{ flexDirection: 'column' }}>
                                         <View style={{ flex: 1, flexDirection: 'row' }}>
 
                                             <View style={{ alignItems: 'center', flexDirection: 'row' }}>
@@ -83,12 +99,14 @@ export default class itemDataDataVia extends Component {
                                                     <Image
                                                         style={styles.image}
                                                         resizeMode="contain"
-                                                        source={{ uri: itemData.detail.flight[0].image }}
+                                                        //source={{ uri: itemData.detail.flight[0].image }}
+                                                        source={{ uri: this.convertGambar(itemData.detail.flight[0].code,itemData.detail.flight[0].image) }}
                                                     />
                                                 </View>
                                                 <View>
                                                     <Text caption1 bold >
-                                                        {itemData.name}
+                                                        {itemData.name} 
+                                                        {/* {this.convertGambar(itemData.detail.flight[0].code,itemData.detail.flight[0].image) } */}
                                                     </Text>
                                                     <Text caption1 style={{ fontStyle: 'italic' }} >
                                                         {itemData.detail.flight[0].class}
@@ -148,7 +166,7 @@ export default class itemDataDataVia extends Component {
                                         </View>
 
 
-                                    </TouchableOpacity>
+                                    </View>
 
                                     <View style={{ flex: 1, flexDirection: 'row' }}>
                                         <View style={{ flex: 1, alignItems: 'flex-start' }}>

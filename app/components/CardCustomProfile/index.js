@@ -177,44 +177,46 @@ export default class CardCustomProfile extends Component {
                 style={{ backgroundColor: BaseColor.whiteColor, paddingHorizontal: 10 }}
             >
                 <View style={styles.contain}>
+                    <View style={{flex:0.5}}>
+                        <IconIons
+                            name={icon}
+                            size={16}
+                            color={BaseColor.primaryColor}
+                        />
+                    </View>
+                    <View style={{flex:9.5}}>
+                        <View style={styles.content}>
+                            <View style={styles.left}>
+                                <Text headline semibold>
+                                    {title}
+                                </Text>
+                                <Text
+                                    note
+                                    numberOfLines={2}
+                                    footnote
+                                    grayColor
+                                    style={{
+                                        paddingTop: 5
+                                    }}
+                                >
+                                    {subtitle}
+                                </Text>
+                            </View>
+                            {
+                                nav == true ?
+                                    <View style={styles.right}>
+                                        <Icon
+                                            name="md-arrow-forward-outline"
+                                            size={18}
+                                            color={BaseColor.primaryColor}
+                                        />
+                                    </View>
+                                    :
+                                    <View />
+                            }
 
-                    <IconIons
-                        name={icon}
-                        size={18}
-                        color={BaseColor.primaryColor}
-                    />
 
-                    <View style={styles.content}>
-                        <View style={styles.left}>
-                            <Text headline semibold>
-                                {title}
-                            </Text>
-                            <Text
-                                note
-                                numberOfLines={2}
-                                footnote
-                                grayColor
-                                style={{
-                                    paddingTop: 5
-                                }}
-                            >
-                                {subtitle}
-                            </Text>
                         </View>
-                        {
-                            nav == true ?
-                                <View style={styles.right}>
-                                    <Icon
-                                        name="md-arrow-forward-outline"
-                                        size={18}
-                                        color={BaseColor.primaryColor}
-                                    />
-                                </View>
-                                :
-                                <View />
-                        }
-
-
                     </View>
                 </View>
 

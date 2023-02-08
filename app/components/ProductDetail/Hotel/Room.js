@@ -38,6 +38,7 @@ const heightImageBanner = Utils.scaleWithPixel(300, 1);
 
 export default class Room extends Component {
   constructor(props) {
+
     super(props);
     this.state = {
       img_featured: Images.doodle,
@@ -48,7 +49,6 @@ export default class Room extends Component {
     };
   }
   componentDidMount() {
-    //console.log('kamar', JSON.stringify(this.state.item[0]));
     //this.rebuild(this.state.item);
   }
 
@@ -63,6 +63,11 @@ export default class Room extends Component {
     const { item, param } = this.state;
     const priceSplitter = (number) =>
       number && number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+
+
+      console.log('item.options',JSON.stringify(item.options));
+      console.log('param',JSON.stringify(param));
 
     return (
       <View
@@ -414,8 +419,8 @@ export default class Room extends Component {
                                     </Text>
                                   )}
                                   <Text caption2 style={{}}>
-                                    {/* {param.room} kamar {param.noofnights} malam */}
-                                    /malam/kamar
+                                    {param.room} kamar {Math.round(param.noofnights)} malam
+                                    {/* /malam/kamar */}
                                   </Text>
                                 </View>
                                 <View style={{ flexDirection: "row" }}>
